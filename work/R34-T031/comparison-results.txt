@@ -1,0 +1,24 @@
+Assignment: R34-T031
+Comparison: Expected vs Actual Results
+
+Scenario: College portal
+Expected: PASS, MATCH
+Actual: PASS, MATCH
+Result: PASS
+
+Scenario: College email
+Expected: PASS, MATCH
+Actual: PASS, MATCH
+Result: PASS
+
+Scenario: Computer lab
+Expected: PASS, REVIEW
+Actual: PASS, REVIEW
+Result: PASS
+
+Final result:
+All expected results match.
+
+Automated tests:
+Ran 4 tests
+OK
