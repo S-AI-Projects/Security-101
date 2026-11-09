@@ -1,0 +1,13 @@
+Assignment: R34-T031
+Student: Soham Birari
+Branch: student/e26b07f1066
+
+Python version: 3.14.7
+Git version: 2.50.1 (Apple Git-155)
+
+Test command:
+python3 -m unittest discover -s ./applied-labs/r34-t031 -p "test_*.py" -v
+
+Test result:
+Ran 4 tests
+OK
