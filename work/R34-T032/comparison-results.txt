@@ -1,0 +1,33 @@
+R34-T032 Expected vs Actual Results
+
+Client capabilities: tools, resources
+Server capabilities: tools, prompts
+Expected negotiated capabilities: tools
+Actual negotiated capabilities: tools
+
+Case: tools
+Expected: DISPATCHED: tools
+Actual: DISPATCHED: tools
+Result: PASS
+
+Case: resources
+Expected: REJECTED
+Actual: REJECTED
+Result: PASS
+
+Case: prompts
+Expected: REJECTED
+Actual: REJECTED
+Result: PASS
+
+Case: unknown
+Expected: REJECTED
+Actual: REJECTED
+Result: PASS
+
+Deliberate failure check:
+Expected was temporarily changed to ALLOWED for resources.
+Actual remained REJECTED.
+The comparison checker reported FAIL and exited with an error.
+
+Final restored comparison: All expected results match.
