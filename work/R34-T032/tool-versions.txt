@@ -1,0 +1,15 @@
+R34-T032 Tool Versions
+
+Python: 3.14.7
+Git: 2.50.1 (Apple Git-155)
+
+Test framework: Python unittest
+Operating system: macOS
+
+Test command:
+python3 -m unittest discover -s ./applied-labs/r34-t032 -p "test_*.py" -v
+
+Comparison command:
+python3 applied-labs/r34-t032/compare_results.py
+
+Execution type: Local Python simulation

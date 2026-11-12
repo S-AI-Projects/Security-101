@@ -1,0 +1,6 @@
+{
+  "client": ["tools", "resources"],
+  "server": ["tools", "prompts"],
+  "expected_negotiated": ["tools"],
+  "requests": ["tools", "resources", "prompts", "unknown"]
+}

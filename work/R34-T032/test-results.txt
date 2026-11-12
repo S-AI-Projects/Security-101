@@ -1,0 +1,39 @@
+R34-T032 Automated Test Results
+
+Command:
+python3 -m unittest discover -s ./applied-labs/r34-t032 -p "test_*.py" -v
+
+Test cases:
+1. test_resources_is_rejected
+2. test_tools_is_negotiated
+3. test_unknown_capability_is_rejected
+4. test_only_common_capability_is_allowed
+5. test_rejected_request_never_reaches_dispatch
+
+Result:
+Ran 5 tests
+OK
+
+All five automated tests passed.
+
+
+
+
+
+
+R34-T032 Automated Test Results
+
+Command:
+python3 -m unittest discover -s ./applied-labs/r34-t032 -p "test_*.py" -v
+
+test_only_common_capability_is_allowed ... ok
+test_rejected_request_never_reaches_dispatch ... ok
+test_resources_is_rejected ... ok
+test_tools_is_negotiated ... ok
+test_unknown_capability_is_rejected ... ok
+
+Ran 5 tests in 0.000s
+OK
+
+Python version: 3.14.7
+Git version: 2.50.1 (Apple Git-155)
