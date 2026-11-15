@@ -1,0 +1,5 @@
+Python: 3.14.7
+Testing framework: Python unittest (standard library)
+Execution environment: macOS Terminal (zsh)
+External services: None
+Model/GPU usage: None

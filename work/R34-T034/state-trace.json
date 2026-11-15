@@ -1,0 +1,78 @@
+[
+  {
+    "scenario_id": "APPSEC-01",
+    "status": "PASS",
+    "reason": "Control matches the named threat",
+    "trace": [
+      {
+        "stage": "received",
+        "status": "PENDING",
+        "reason": "Scenario received"
+      },
+      {
+        "stage": "fields_validated",
+        "status": "PASS",
+        "reason": "All required fields are present"
+      },
+      {
+        "stage": "consistency_checked",
+        "status": "PASS",
+        "reason": "Control matches the named threat"
+      },
+      {
+        "stage": "finalized",
+        "status": "PASS",
+        "reason": "Control matches the named threat"
+      }
+    ]
+  },
+  {
+    "scenario_id": "APPSEC-02",
+    "status": "FAIL",
+    "reason": "Missing required fields: asset",
+    "trace": [
+      {
+        "stage": "received",
+        "status": "PENDING",
+        "reason": "Scenario received"
+      },
+      {
+        "stage": "fields_validated",
+        "status": "FAIL",
+        "reason": "Missing required fields: asset"
+      },
+      {
+        "stage": "finalized",
+        "status": "FAIL",
+        "reason": "Missing required fields: asset"
+      }
+    ]
+  },
+  {
+    "scenario_id": "APPSEC-03",
+    "status": "REVIEW",
+    "reason": "Control may be unrelated to the named threat",
+    "trace": [
+      {
+        "stage": "received",
+        "status": "PENDING",
+        "reason": "Scenario received"
+      },
+      {
+        "stage": "fields_validated",
+        "status": "PASS",
+        "reason": "All required fields are present"
+      },
+      {
+        "stage": "consistency_checked",
+        "status": "REVIEW",
+        "reason": "Control may be unrelated to the named threat"
+      },
+      {
+        "stage": "finalized",
+        "status": "REVIEW",
+        "reason": "Control may be unrelated to the named threat"
+      }
+    ]
+  }
+]
