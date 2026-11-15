@@ -1,0 +1,7 @@
+{
+  "negotiated": ["tools"],
+  "baseline_equivalent": true,
+  "tools_dispatched": true,
+  "resources_rejected": true,
+  "dispatch_log": ["tools"]
+}

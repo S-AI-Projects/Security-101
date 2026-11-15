@@ -1,0 +1,4 @@
+Expected: {'negotiated': ['resources']}
+Actual: {'negotiated': ['tools'], 'baseline_equivalent': True, 'tools_dispatched': True, 'resources_rejected': True, 'dispatch_log': ['tools']}
+RESULT: MISMATCH
+Exit code: 1

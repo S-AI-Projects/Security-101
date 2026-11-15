@@ -1,0 +1,17 @@
+{
+  "client": {
+    "tools": true,
+    "resources": true
+  },
+  "server": {
+    "tools": true,
+    "prompts": true
+  },
+  "expected_negotiated": [
+    "tools"
+  ],
+  "expected_dispatch_log": [
+    "tools"
+  ],
+  "expected_resources_rejected": true
+}
