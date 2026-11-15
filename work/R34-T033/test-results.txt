@@ -1,0 +1,20 @@
+R34-T033 Automated Test Results
+
+Command:
+python3 -m unittest discover -s ./applied-labs/r34-t033 -p "test_*.py"
+
+Result:
+Ran 4 tests
+OK
+
+Tests:
+- Complete scenario passes
+- Missing asset fails
+- Unrelated control is flagged for review
+- Missing residual risk fails
+
+Example command:
+python3 applied-labs/r34-t033/example.py
+
+Comparison command:
+python3 applied-labs/r34-t033/compare_results.py
