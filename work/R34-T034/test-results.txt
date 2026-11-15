@@ -1,0 +1,10 @@
+test_complete_scenario_passes (test_example.TestScenarioChecker.test_complete_scenario_passes) ... ok
+test_final_output_matches_last_recorded_state (test_example.TestScenarioChecker.test_final_output_matches_last_recorded_state) ... ok
+test_missing_asset_fails (test_example.TestScenarioChecker.test_missing_asset_fails) ... ok
+test_unrelated_control_needs_review (test_example.TestScenarioChecker.test_unrelated_control_needs_review) ... ok
+test_whitespace_only_asset_fails (test_example.TestScenarioChecker.test_whitespace_only_asset_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.000s
+
+OK

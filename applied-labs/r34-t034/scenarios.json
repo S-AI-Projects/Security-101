@@ -1,0 +1,27 @@
+
+[
+  {
+    "id": "APPSEC-01",
+    "lesson_section": "5.1 Input Validation",
+    "asset": "Customer account records",
+    "threat": "SQL injection",
+    "control": "Input validation and parameterized queries",
+    "residual_risk": "Other application logic vulnerabilities may remain"
+  },
+  {
+    "id": "APPSEC-02",
+    "lesson_section": "5.1 Output Encoding",
+    "asset": "",
+    "threat": "Cross-site scripting",
+    "control": "Output encoding",
+    "residual_risk": "Some untested output paths may remain"
+  },
+  {
+    "id": "APPSEC-03",
+    "lesson_section": "5.2 AppSec key capabilities",
+    "asset": "Payment transaction records",
+    "threat": "SQL injection",
+    "control": "Secure development training",
+    "residual_risk": "The application may still contain injection vulnerabilities"
+  }
+]
