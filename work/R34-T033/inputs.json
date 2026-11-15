@@ -1,0 +1,20 @@
+{
+  "complete": {
+    "asset": "Customer records",
+    "threat": "unauthorized access",
+    "control": "Multi-factor authentication and access control",
+    "residual_risk": "A compromised authorized account may still be misused."
+  },
+  "missing_asset": {
+    "asset": "",
+    "threat": "ransomware",
+    "control": "Offline backups and immutable backups",
+    "residual_risk": "Some recent data may not be recoverable."
+  },
+  "unrelated_control": {
+    "asset": "Employee email accounts",
+    "threat": "phishing",
+    "control": "Physical server room locks",
+    "residual_risk": "Employees may still respond to deceptive messages."
+  }
+}

@@ -1,0 +1,23 @@
+R34-T033 Expected vs Actual Results
+
+Scenario: complete
+Expected: PASS
+Actual: PASS
+RESULT: PASS
+
+Scenario: missing_asset
+Expected: FAIL
+Actual: FAIL
+RESULT: PASS
+
+Scenario: unrelated_control
+Expected: REVIEW
+Actual: REVIEW
+RESULT: PASS
+
+Final result: All expected results match.
+
+Deliberate failure check:
+Temporarily changed unrelated_control expected result from REVIEW to PASS.
+The comparison checker detected the mismatch.
+The original expected value was restored to REVIEW.
