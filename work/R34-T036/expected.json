@@ -1,0 +1,7 @@
+[
+  {"id": "reading", "labels": ["confidentiality"]},
+  {"id": "alteration", "labels": ["integrity"]},
+  {"id": "outage", "labels": ["availability"]},
+  {"id": "combined", "labels": ["confidentiality", "integrity", "availability"]},
+  {"id": "no_impact", "labels": []}
+]

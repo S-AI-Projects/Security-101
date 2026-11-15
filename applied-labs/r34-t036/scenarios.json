@@ -1,0 +1,7 @@
+[
+  {"id": "reading", "impacts": {"unauthorized_reading": true}},
+  {"id": "alteration", "impacts": {"altered_records": true}},
+  {"id": "outage", "impacts": {"service_unavailable": true}},
+  {"id": "combined", "impacts": {"unauthorized_reading": true, "altered_records": true, "service_unavailable": true}},
+  {"id": "no_impact", "impacts": {}}
+]
