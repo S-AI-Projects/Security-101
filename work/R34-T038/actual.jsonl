@@ -1,0 +1,4 @@
+{"input": "192.0.2.1", "status": "ALLOWED", "reason": "Address belongs to 192.0.2.0/24."}
+{"input": "198.51.100.1", "status": "DENIED", "reason": "Address does not belong to 192.0.2.0/24."}
+{"input": "192.0.2.999", "status": "REJECTED", "reason": "Malformed IP address or CIDR."}
+{"input": "192.0.2.255", "status": "ALLOWED", "reason": "Address belongs to 192.0.2.0/24."}
