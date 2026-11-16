@@ -1,0 +1,17 @@
+Command: python3 -m unittest discover -s applied-labs/r34-t019 -p 'test_*.py' -v
+
+Tests passed:
+- test_correct_answer_passes_after_normalization
+- test_every_question_has_options_answer_and_rationale
+- test_incorrect_answer_fails_and_includes_rationale
+- test_unknown_question_fails
+- test_command_outputs_expected_statuses
+- test_fixtures_have_three_scenarios_and_three_answers
+- test_blank_or_non_string_required_field_fails
+- test_complete_scenario_passes
+- test_control_mismatch_requires_review
+- test_missing_required_field_fails
+- test_non_object_scenario_fails
+- test_unconfirmed_control_fit_requires_review
+
+Ran 12 tests. Result: OK.
