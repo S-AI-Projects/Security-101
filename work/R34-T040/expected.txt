@@ -1,0 +1,6 @@
+valid-read: ALLOWED; executor_called=true
+unknown-delete: REJECTED; executor_called=false
+missing-path: REJECTED; executor_called=false
+empty-path: REJECTED; executor_called=false
+invalid-path-type: REJECTED; executor_called=false
+total_executor_calls: 1
