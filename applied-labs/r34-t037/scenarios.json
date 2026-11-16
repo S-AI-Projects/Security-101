@@ -1,0 +1,23 @@
+[
+  {
+    "id": "missing_asset",
+    "asset": "",
+    "threat": "Unauthorized access",
+    "control": "Role-based access control",
+    "residual_risk": "Some access mistakes may remain."
+  },
+  {
+    "id": "phishing",
+    "asset": "Customer account records",
+    "threat": "Phishing",
+    "control": "Multi-factor authentication",
+    "residual_risk": "Some users may still approve fraudulent requests."
+  },
+  {
+    "id": "unrelated_control",
+    "asset": "Company network",
+    "threat": "Ransomware",
+    "control": "Security awareness posters",
+    "residual_risk": "Some malware may still enter the network."
+  }
+]

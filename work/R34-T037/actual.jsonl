@@ -1,0 +1,3 @@
+{"id": "missing_asset", "status": "FAIL", "message": "Missing required fields: asset"}
+{"id": "phishing", "status": "PASS", "message": "Required fields complete; control matches the structural rubric."}
+{"id": "unrelated_control", "status": "REVIEW", "message": "Control may be unrelated to the named threat; human review required."}
