@@ -1,0 +1,6 @@
+{"input": {"id": "valid-read", "tool": "read", "arguments": {"path": "notes.txt"}}, "decision": {"status": "ALLOWED", "reason": "Policy and argument validation passed.", "executor_called": true, "result": "MOCK_READ:notes.txt"}}
+{"input": {"id": "unknown-delete", "tool": "delete", "arguments": {"path": "notes.txt"}}, "decision": {"status": "REJECTED", "reason": "Tool is not allowed.", "executor_called": false}}
+{"input": {"id": "missing-path", "tool": "read", "arguments": {}}, "decision": {"status": "REJECTED", "reason": "Missing required argument: path.", "executor_called": false}}
+{"input": {"id": "empty-path", "tool": "read", "arguments": {"path": ""}}, "decision": {"status": "REJECTED", "reason": "Argument cannot be empty: path.", "executor_called": false}}
+{"input": {"id": "invalid-path-type", "tool": "read", "arguments": {"path": 123}}, "decision": {"status": "REJECTED", "reason": "Invalid type for argument: path.", "executor_called": false}}
+{"total_executor_calls": 1}
