@@ -1,0 +1,40 @@
+{
+  "small": [
+    {
+      "tool": "read",
+      "arguments": {"path": "notes.txt"}
+    }
+  ],
+  "medium": [
+    {
+      "tool": "read",
+      "arguments": {"path": "notes.txt"}
+    },
+    {
+      "tool": "delete",
+      "arguments": {"path": "notes.txt"}
+    },
+    {
+      "tool": "read",
+      "arguments": {}
+    }
+  ],
+  "boundary": [
+    {
+      "tool": "read",
+      "arguments": {"path": "notes.txt"}
+    },
+    {
+      "tool": "delete",
+      "arguments": {"path": "notes.txt"}
+    },
+    {
+      "tool": "read",
+      "arguments": {}
+    },
+    {
+      "tool": "read",
+      "arguments": {"path": ""}
+    }
+  ]
+}
