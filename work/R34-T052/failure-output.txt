@@ -1,0 +1,3 @@
+Executing unnegotiated dispatch expecting failure exit...
+Expected failure caught: Capability 'resources' was not negotiated. Negotiated capabilities: ['tools']
+Scenario: failure

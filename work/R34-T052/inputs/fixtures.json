@@ -1,0 +1,22 @@
+{
+  "description": "Fixtures for Zero Trust capability negotiation (R34-T052)",
+  "normal": {
+    "client_capabilities": ["tools", "resources"],
+    "server_capabilities": ["tools", "prompts"],
+    "expected_negotiated": ["tools"],
+    "test_invocations": [
+      {"capability": "tools", "expected_status": "SUCCESS"},
+      {"capability": "resources", "expected_status": "REJECTED"}
+    ]
+  },
+  "smallest_valid": {
+    "client_capabilities": ["tools"],
+    "server_capabilities": ["tools"],
+    "expected_negotiated": ["tools"]
+  },
+  "boundary_disjoint": {
+    "client_capabilities": ["resources"],
+    "server_capabilities": ["prompts"],
+    "expected_negotiated": []
+  }
+}

@@ -1,0 +1,5 @@
+Scenario: boundary
+Client caps: ['resources']
+Server caps: ['prompts']
+Negotiated caps (empty boundary): []
+Dispatch 'resources' on empty negotiation: [REJECTED] -> {'error': "Capability 'resources' was not negotiated. Negotiated capabilities: []", 'capability': 'resources'}
