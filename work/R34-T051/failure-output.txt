@@ -1,0 +1,2 @@
+[FAIL] Deliberate failure scenario: Missing required field: asset
+Scenario mode: failure

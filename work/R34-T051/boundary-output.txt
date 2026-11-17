@@ -1,0 +1,2 @@
+Scenario mode: boundary
+Executed 0 boundary scenarios successfully. Output count: 0
