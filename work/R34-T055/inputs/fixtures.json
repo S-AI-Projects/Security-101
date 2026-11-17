@@ -1,0 +1,26 @@
+{
+  "description": "Fixtures for data security scenario rubric with worked example (R34-T055)",
+  "scenarios": [
+    {
+      "name": "Customer PII Database",
+      "asset": "PostgreSQL database containing customer financial and PII records",
+      "threat": "Exfiltration of sensitive plaintext records during database backup",
+      "control": "Implement transparent database encryption (TDE) and encrypted backup exports",
+      "residual_risk": "Key compromise if master encryption keys are improperly stored"
+    },
+    {
+      "name": "Missing asset data scenario",
+      "asset": "",
+      "threat": "Unauthorized data alteration in transit",
+      "control": "Enforce TLS 1.3 with mutual authentication",
+      "residual_risk": "Man-in-the-middle if root CA certificates are untrusted"
+    },
+    {
+      "name": "Mismatched data protection control",
+      "asset": "Analytics data warehouse tables",
+      "threat": "Re-identification of anonymized patient health records",
+      "control": "Deploy storage volume snapshot replication to secondary region",
+      "residual_risk": "Replication copies anonymized data without mitigating re-identification risk"
+    }
+  ]
+}
