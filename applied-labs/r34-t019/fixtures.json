@@ -1,0 +1,33 @@
+{
+  "scenarios": [
+    {
+      "name": "Public storage bucket",
+      "asset": "Cloud storage bucket containing customer exports",
+      "threat": "Unauthorized disclosure through public access",
+      "control": "Block public access and continuously assess storage policies",
+      "residual_risk": "An overly broad trusted identity could still retrieve data.",
+      "control_matches_threat": true
+    },
+    {
+      "name": "Unpatched application server",
+      "asset": "Internet-facing payroll application server",
+      "threat": "Exploitation of a known vulnerability in the application server",
+      "control": "Restrict administrative access and segment the server network",
+      "residual_risk": "The vulnerable service remains exploitable if reached.",
+      "control_matches_threat": false
+    },
+    {
+      "name": "Container image in registry",
+      "asset": "Container image used by a payment-processing service",
+      "threat": "Deployment of an image containing a known vulnerable package",
+      "control": "Scan images and block releases with critical findings",
+      "residual_risk": "New vulnerabilities may be disclosed after an image is scanned.",
+      "control_matches_threat": true
+    }
+  ],
+  "answers": {
+    "Q1": "B",
+    "Q2": "A",
+    "Q3": "A"
+  }
+}

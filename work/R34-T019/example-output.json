@@ -1,0 +1,35 @@
+{
+  "scenarios": [
+    {
+      "name": "Public storage bucket",
+      "status": "PASS"
+    },
+    {
+      "name": "Unpatched application server",
+      "status": "REVIEW"
+    },
+    {
+      "name": "Container image in registry",
+      "status": "PASS"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q1",
+      "status": "PASS"
+    },
+    {
+      "id": "Q2",
+      "status": "PASS"
+    },
+    {
+      "id": "Q3",
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "PASS": 5,
+    "REVIEW": 1,
+    "FAIL": 0
+  }
+}
