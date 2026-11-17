@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/satyamsingh/Desktop/index.html/Security-101/./work/R34-T056/check_results.py", line 43, in <module>
+    sys.exit(main())
+  File "/Users/satyamsingh/Desktop/index.html/Security-101/./work/R34-T056/check_results.py", line 36, in main
+    assert res["precision"] == 1.0, "Deliberate wrong result check"
+AssertionError: Deliberate wrong result check

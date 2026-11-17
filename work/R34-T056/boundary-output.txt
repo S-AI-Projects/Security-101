@@ -1,0 +1,3 @@
+Scenario: boundary
+Zero-prediction boundary: y_true=[1, 0], y_pred=[0, 0]
+Result: TP=0, FP=0, Precision=0.0

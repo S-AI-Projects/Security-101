@@ -1,0 +1,6 @@
+Scenario: normal
+y_true: [1, 1, 0, 0]
+y_pred: [1, 0, 1, 0]
+Confusion Matrix: TP=1, FN=1, FP=1, TN=1
+Precision: 0.5, Recall: 0.5
+Refactoring equivalence between baseline and modular design verified.
