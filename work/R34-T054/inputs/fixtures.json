@@ -1,0 +1,26 @@
+{
+  "description": "Fixtures for infrastructure security rubric with service adapter (R34-T054)",
+  "scenarios": [
+    {
+      "name": "Cloud compute cluster",
+      "asset": "Virtual machine compute cluster",
+      "threat": "Unpatched OS vulnerability exploitation",
+      "control": "Automated patch management and vulnerability scanning",
+      "residual_risk": "Zero-day vulnerabilities prior to vendor patch release"
+    },
+    {
+      "name": "Missing asset infrastructure scenario",
+      "asset": "",
+      "threat": "Unauthorized lateral movement across subnets",
+      "control": "Implement network security group micro-segmentation",
+      "residual_risk": "Misconfiguration in security group rules"
+    },
+    {
+      "name": "Mismatched infrastructure control",
+      "asset": "Storage area network (SAN) storage volumes",
+      "threat": "Ransomware data encryption",
+      "control": "Deploy physical security badge readers at server room",
+      "residual_risk": "Physical perimeter controls do not prevent network ransomware encryption"
+    }
+  ]
+}

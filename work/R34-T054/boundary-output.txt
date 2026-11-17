@@ -1,0 +1,2 @@
+Scenario mode: boundary
+Boundary scenario evaluated: 0 records processed.

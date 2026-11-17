@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/satyamsingh/Desktop/index.html/Security-101/./work/R34-T054/check_results.py", line 28, in <module>
+    sys.exit(main())
+  File "/Users/satyamsingh/Desktop/index.html/Security-101/./work/R34-T054/check_results.py", line 21, in main
+    assert results[1][1] == "PASS", "Deliberate wrong result check"
+AssertionError: Deliberate wrong result check

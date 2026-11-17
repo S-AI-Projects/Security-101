@@ -1,0 +1,3 @@
+Python: Python 3.9.6
+Git: git version 2.50.1 (Apple Git-155)
+OS: Darwin 25.6.0 arm64
