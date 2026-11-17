@@ -1,0 +1,4 @@
+Failure simulation check: Asserting non-member belongs to allowlist...
+Expected failure caught: Expected 198.51.100.1 to be DENIED
+Scenario: failure
+Allowlisted Network: 192.0.2.0/24

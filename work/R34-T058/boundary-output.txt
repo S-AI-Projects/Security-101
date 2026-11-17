@@ -1,0 +1,5 @@
+Scenario: boundary
+Allowlisted Network: 192.0.2.0/24
+Boundary [ALLOW] 192.0.2.0: is_member=True
+Boundary [ALLOW] 192.0.2.255: is_member=True
+Boundary [DENY] 192.0.3.0: is_member=False
