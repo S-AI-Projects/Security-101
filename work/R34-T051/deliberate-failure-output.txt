@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/satyamsingh/Desktop/index.html/Security-101/./work/R34-T051/check_results.py", line 43, in <module>
+    sys.exit(main())
+  File "/Users/satyamsingh/Desktop/index.html/Security-101/./work/R34-T051/check_results.py", line 36, in main
+    assert s2_status == "PASS", "Deliberate wrong result check triggered"
+AssertionError: Deliberate wrong result check triggered

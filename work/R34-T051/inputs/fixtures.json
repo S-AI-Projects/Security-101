@@ -1,0 +1,26 @@
+{
+  "description": "Fictional scenario fixtures for Module 1 security scenario rubric check",
+  "scenarios": [
+    {
+      "name": "User credential store",
+      "asset": "Customer authentication database",
+      "threat": "Credential stuffing and unauthorized access",
+      "control": "Enforce multi-factor authentication and rate limiting",
+      "residual_risk": "Adversary session hijacking via phishing tokens"
+    },
+    {
+      "name": "Missing asset scenario",
+      "asset": "",
+      "threat": "Eavesdropping on network communication",
+      "control": "Implement TLS 1.3 encryption in transit",
+      "residual_risk": "Compromised endpoints could still expose plaintext"
+    },
+    {
+      "name": "Mismatched control scenario",
+      "asset": "Public web portal",
+      "threat": "SQL injection via search input",
+      "control": "Deploy automated offline data backup service",
+      "residual_risk": "Backups do not prevent data exfiltration via active injection"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Scenario mode: normal
+[PASS] User credential store: Scenario meets structural rubric requirements
+[FAIL] Missing asset scenario: Missing required field: asset
+[FLAG_REVIEW] Mismatched control scenario: Control 'Deploy automated offline data backup service' appears unrelated to threat 'SQL injection via search input'; flagged for human review
