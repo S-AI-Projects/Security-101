@@ -1,0 +1,6 @@
+Scenario: normal
+Client caps: ['resources', 'tools']
+Server caps: ['prompts', 'tools']
+Negotiated caps (intersection): ['tools']
+Dispatch 'tools': [SUCCESS] -> {'status': 'SUCCESS', 'capability': 'tools', 'data': 'tool_catalog_v1'}
+Dispatch 'resources': [REJECTED] -> {'error': "Capability 'resources' was not negotiated. Negotiated capabilities: ['tools']", 'capability': 'resources'}
