@@ -1,0 +1,10 @@
+[
+  {"tool": "add", "arguments": [2, 3]},
+  {"tool": "multiply", "arguments": [2, 3]},
+  {"tool": "add", "arguments": [0, 0]},
+  {"tool": "multiply", "arguments": [0, 7]},
+  {"tool": "subtract", "arguments": [2, 3]},
+  {"tool": "add", "arguments": ["2", 3]},
+  {"tool": "add", "arguments": [true, 3]},
+  {"tool": "add"}
+]

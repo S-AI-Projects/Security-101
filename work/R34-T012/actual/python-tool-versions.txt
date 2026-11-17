@@ -1,0 +1,5 @@
+Python: Python 3.13.15
+Tool implementation: Python 3 standard library only
+Test framework: unittest (Python standard library)
+Example command: python3 applied-labs/r34-t012/example.py
+Test command: python3 -m unittest discover -s ./applied-labs/r34-t012 -p "test_*.py"
