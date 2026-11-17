@@ -1,0 +1,5 @@
+Command:
+python3 -m unittest discover -s ./applied-labs/r34-t012 -p "test_*.py"
+
+Result:
+Ran 12 tests. OK.

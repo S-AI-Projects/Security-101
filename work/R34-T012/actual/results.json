@@ -1,0 +1,10 @@
+[
+  {"tool": "add", "arguments": [2, 3], "response": {"ok": true, "result": 5}},
+  {"tool": "multiply", "arguments": [2, 3], "response": {"ok": true, "result": 6}},
+  {"tool": "add", "arguments": [0, 0], "response": {"ok": true, "result": 0}},
+  {"tool": "multiply", "arguments": [0, 7], "response": {"ok": true, "result": 0}},
+  {"tool": "subtract", "arguments": [2, 3], "response": {"ok": false, "error": {"code": "INVALID_TOOL", "message": "Tool is not in the allowed tool list."}}},
+  {"tool": "add", "arguments": ["2", 3], "response": {"ok": false, "error": {"code": "INVALID_ARGUMENT_TYPE", "message": "Both arguments must be int or float values; strings and booleans are not accepted."}}},
+  {"tool": "add", "arguments": [true, 3], "response": {"ok": false, "error": {"code": "INVALID_ARGUMENT_TYPE", "message": "Both arguments must be int or float values; strings and booleans are not accepted."}}},
+  {"tool": "add", "arguments": null, "response": {"ok": false, "error": {"code": "INVALID_ARGUMENTS", "message": "Exactly two positional arguments are required."}}}
+]
