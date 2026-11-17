@@ -1,0 +1,14 @@
+{
+  "description": "Fixtures for bounded conversation memory (R34-T053)",
+  "capacity": 3,
+  "normal_input_sequence": [
+    {"id": "A", "speaker": "user", "message": "Login request"},
+    {"id": "B", "speaker": "system", "message": "Challenge issued"},
+    {"id": "C", "speaker": "user", "message": "MFA response verified"},
+    {"id": "D", "speaker": "system", "message": "Session token granted"}
+  ],
+  "expected_final_ids": ["B", "C", "D"],
+  "boundary_single": [
+    {"id": "A", "speaker": "user", "message": "Initial hello"}
+  ]
+}

@@ -1,0 +1,2 @@
+Scenario: boundary
+Boundary (count < capacity): ['A']

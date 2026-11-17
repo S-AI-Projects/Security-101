@@ -1,0 +1,15 @@
+Scenario: normal
+Adding records A, B, C, D to bounded memory (capacity 3)...
+Added A -> Stored IDs: ['A']
+Added B -> Stored IDs: ['A', 'B']
+Added C -> Stored IDs: ['A', 'B', 'C']
+Added D -> Stored IDs: ['B', 'C', 'D']
+Final stored records (arrival order): ['B', 'C', 'D']
+Verified stored records after caller mutation attempt: ['B', 'C', 'D']
+
+Intermediate State Trace:
+  Step 0 [INIT]: []
+  Step 1 [ADD_A]: ['A']
+  Step 2 [ADD_B]: ['A', 'B']
+  Step 3 [ADD_C]: ['A', 'B', 'C']
+  Step 4 [ADD_D]: ['B', 'C', 'D']
