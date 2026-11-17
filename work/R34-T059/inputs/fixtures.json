@@ -1,0 +1,29 @@
+{
+  "description": "Fixtures for infrastructure rubric evaluation experiment (R34-T059)",
+  "scenarios": [
+    {
+      "name": "Kubernetes API Server",
+      "asset": "Production Kubernetes cluster API server",
+      "threat": "Unauthorized remote administrative command execution",
+      "control": "Enforce mutual TLS and strict role-based access control (RBAC)",
+      "residual_risk": "Privilege escalation if an admin token is compromised",
+      "expected_outcome": "PASS"
+    },
+    {
+      "name": "Missing asset infra quiz scenario",
+      "asset": "",
+      "threat": "Eavesdropping on inter-pod overlay network traffic",
+      "control": "Deploy service mesh with automatic mTLS encryption",
+      "residual_risk": "Node-level compromise exposes pod memory",
+      "expected_outcome": "FAIL"
+    },
+    {
+      "name": "Mismatched infrastructure quiz control",
+      "asset": "Bare-metal hypervisor fleet",
+      "threat": "DDoS flooding against external API gateway",
+      "control": "Implement BIOS password and disable USB boot in firmware",
+      "residual_risk": "Firmware controls do not mitigate network-layer volumetric DDoS",
+      "expected_outcome": "FLAG_REVIEW"
+    }
+  ]
+}
