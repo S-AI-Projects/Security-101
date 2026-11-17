@@ -1,0 +1,29 @@
+{
+  "description": "Fixtures for network security scenario rubric comparison (R34-T060)",
+  "scenarios": [
+    {
+      "name": "Corporate VLAN Gateway",
+      "asset": "Internal employee corporate VLAN gateway",
+      "threat": "Lateral adversary movement from compromised guest Wi-Fi",
+      "control": "Isolate guest segment using VLAN access control lists (ACLs) and stateful firewall",
+      "residual_risk": "Adversary exploiting misconfigured firewall trunk port",
+      "expected_outcome": "PASS"
+    },
+    {
+      "name": "Missing asset network scenario",
+      "asset": "",
+      "threat": "Packet sniffing on unencrypted backhaul link",
+      "control": "Deploy IPsec tunnel with AES-256 encryption",
+      "residual_risk": "Compromised router endpoint exposing cleartext before encapsulation",
+      "expected_outcome": "FAIL"
+    },
+    {
+      "name": "Mismatched network security control",
+      "asset": "Public web tier server pool",
+      "threat": "BGP route hijacking causing traffic rerouting",
+      "control": "Enforce Wi-Fi WPA3 Enterprise authentication",
+      "residual_risk": "WPA3 wireless security does not prevent upstream WAN BGP route hijacking",
+      "expected_outcome": "FLAG_REVIEW"
+    }
+  ]
+}
