@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/work/R34-T020/check_results.py", line 40, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/work/R34-T020/check_results.py", line 33, in main
+    assert matrix[0]["responsible_party"] == "provider"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Process exit status: 1

@@ -1,0 +1,9 @@
+Scenario: Illustrative ownership rows based on "1.6 Shared responsibility model.md"; these are mock records, not provider policy.
+task | service_model | responsible_party
+Patch guest operating system | IaaS | customer
+Protect physical host | IaaS | provider
+Secure application code | PaaS | customer
+Patch managed runtime | PaaS | provider
+Configure user access | SaaS | customer
+Protect hosted application | SaaS | provider
+Review data handling | PaaS | shared
