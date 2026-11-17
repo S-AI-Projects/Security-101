@@ -1,0 +1,16 @@
+{
+  "description": "Fixtures for binary classification evaluation and equivalence proof (R34-T056)",
+  "normal_fixture": {
+    "y_true": [1, 1, 0, 0],
+    "y_pred": [1, 0, 1, 0],
+    "expected_matrix": {"tp": 1, "fn": 1, "fp": 1, "tn": 1},
+    "expected_precision": 0.5,
+    "expected_recall": 0.5
+  },
+  "zero_denominator_fixture": {
+    "y_true": [1, 0],
+    "y_pred": [0, 0],
+    "expected_precision": 0.0,
+    "expected_recall": 0.0
+  }
+}
