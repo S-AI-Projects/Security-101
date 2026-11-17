@@ -1,0 +1,11 @@
+{
+  "description": "Fixtures for network range classification and recovery (R34-T058)",
+  "allowlist_cidr": "192.0.2.0/24",
+  "samples": [
+    {"ip": "192.0.2.1", "expected_status": "ALLOW", "is_member": true},
+    {"ip": "198.51.100.1", "expected_status": "DENY", "is_member": false},
+    {"ip": "999.999.999.999", "expected_status": "ERROR", "error_type": "MALFORMED_IP"},
+    {"ip": "", "expected_status": "ERROR", "error_type": "MISSING_DATA"},
+    {"ip": "192.0.2.42", "expected_status": "ALLOW", "is_member": true}
+  ]
+}

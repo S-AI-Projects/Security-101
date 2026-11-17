@@ -1,0 +1,8 @@
+Scenario: normal
+Allowlisted Network: 192.0.2.0/24
+[ALLOW] IP: 192.0.2.1 in 192.0.2.0/24 -> Member: True
+[DENY] IP: 198.51.100.1 in 192.0.2.0/24 -> Member: False
+[ERROR] IP: '999.999.999.999' -> MALFORMED_IP: Malformed IP address '999.999.999.999': '999.999.999.999' does not appear to be an IPv4 or IPv6 address
+[ERROR] IP: '' -> MISSING_DATA: IP address cannot be empty or None
+[ALLOW] IP: 192.0.2.42 in 192.0.2.0/24 -> Member: True
+Graceful recovery demonstrated: Parser handled malformed inputs without state corruption.
