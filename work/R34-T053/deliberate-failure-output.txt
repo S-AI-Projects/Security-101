@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/satyamsingh/Desktop/index.html/Security-101/./work/R34-T053/check_results.py", line 40, in <module>
+    sys.exit(main())
+  File "/Users/satyamsingh/Desktop/index.html/Security-101/./work/R34-T053/check_results.py", line 33, in main
+    assert "A" in stored_ids, "Deliberate wrong result check"
+AssertionError: Deliberate wrong result check
