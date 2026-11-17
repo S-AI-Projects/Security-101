@@ -1,0 +1,11 @@
+Scenario mode: normal
+[PASS] Kubernetes API Server: Scenario meets structural rubric requirements
+[FAIL] Missing asset infra quiz scenario: Missing required field: asset
+[FLAG_REVIEW] Mismatched infrastructure quiz control: Control 'Implement BIOS password and disable USB boot in firmware' appears unrelated to threat 'DDoS flooding against external API gateway'; flagged for human review
+
+Evaluation Experiment across 3 controlled configurations:
+Configuration        | Input Size | Correctness  | Avg Latency (µs)
+-----------------------------------------------------------------
+config_1_single      | 1          | 100.0%       | 0.8             
+config_2_standard    | 3          | 100.0%       | 0.65            
+config_3_extended    | 6          | 100.0%       | 0.64            

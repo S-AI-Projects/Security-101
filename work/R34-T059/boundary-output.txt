@@ -1,0 +1,2 @@
+Scenario mode: boundary
+Boundary all-empty check: ('FAIL', 'Missing required field: asset')
