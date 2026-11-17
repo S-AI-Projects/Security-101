@@ -1,0 +1,25 @@
+{
+  "description": "Fixtures for typed tool dispatch and assessment questions (R34-T057)",
+  "test_cases": [
+    {
+      "name": "valid_add",
+      "call": {"tool": "add", "arguments": {"a": 2, "b": 3}},
+      "expected_result": 5
+    },
+    {
+      "name": "valid_multiply",
+      "call": {"tool": "multiply", "arguments": {"a": 2, "b": 3}},
+      "expected_result": 6
+    },
+    {
+      "name": "unknown_tool",
+      "call": {"tool": "system_exec", "arguments": {"a": 1, "b": 2}},
+      "expected_error": "UNKNOWN_TOOL"
+    },
+    {
+      "name": "invalid_string_argument",
+      "call": {"tool": "add", "arguments": {"a": "2", "b": 3}},
+      "expected_error": "INVALID_ARGUMENT"
+    }
+  ]
+}

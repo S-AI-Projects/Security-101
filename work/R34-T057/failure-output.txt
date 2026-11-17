@@ -1,0 +1,3 @@
+Failure simulation: Attempting to assert success on invalid string input...
+Expected failure caught: Expected call to fail due to string argument
+Scenario: failure

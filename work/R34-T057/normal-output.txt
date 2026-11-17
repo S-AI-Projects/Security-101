@@ -1,0 +1,5 @@
+Scenario: normal
+Dispatch add(2, 3): {'status': 'SUCCESS', 'tool': 'add', 'result': 5}
+Dispatch multiply(2, 3): {'status': 'SUCCESS', 'tool': 'multiply', 'result': 6}
+Dispatch unknown tool: {'status': 'ERROR', 'error_type': 'UNKNOWN_TOOL', 'message': "Tool 'system_exec' is not in the allowlist. Allowed tools: ['add', 'multiply']"}
+Dispatch invalid arg type: {'status': 'ERROR', 'error_type': 'INVALID_ARGUMENT', 'message': "Parameter 'a' must be numeric (int or float), received str"}

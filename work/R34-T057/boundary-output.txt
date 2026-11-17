@@ -1,0 +1,3 @@
+Scenario: boundary
+Boundary float: {'status': 'SUCCESS', 'tool': 'add', 'result': 4.0}
+Boundary missing args: {'status': 'ERROR', 'error_type': 'MISSING_ARGUMENT', 'message': "Missing required parameter 'a'"}
