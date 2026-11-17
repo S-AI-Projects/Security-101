@@ -1,0 +1,4 @@
+Scenario mode: normal
+[PASS] Cloud compute cluster: Scenario meets structural rubric requirements
+[FAIL] Missing asset infrastructure scenario: Missing required field: asset
+[FLAG_REVIEW] Mismatched infrastructure control: Control 'Deploy physical security badge readers at server room' appears unrelated to threat 'Ransomware data encryption'; flagged for human review
