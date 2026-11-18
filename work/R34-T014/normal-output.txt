@@ -1,0 +1,9 @@
+Scenario: normal (local fictional mock)
+Intermediate states: received -> normalized -> completeness -> control_review -> final
+Asset: Fictional customer-support training transcripts
+Threat: Personal information could be exposed from the training transcripts.
+Control: Remove direct identifiers and limit dataset access to approved staff because these steps reduce exposure of transcript data.
+Residual risk: Indirect identifiers may remain, and an authorized user could still misuse an accessible copy.
+Missing fields: none
+Control review: matched (none)
+Rubric result: PASS

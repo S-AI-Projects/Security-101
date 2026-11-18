@@ -1,0 +1,9 @@
+Scenario: boundary (local fictional mock)
+Intermediate states: received -> normalized -> completeness -> control_review -> final
+Asset: MISSING
+Threat: Personal information could be exposed from the training transcripts.
+Control: Remove direct identifiers and limit dataset access.
+Residual risk: Indirect identifiers may remain in the fictional dataset.
+Missing fields: asset
+Control review: matched (none)
+Rubric result: FAIL
