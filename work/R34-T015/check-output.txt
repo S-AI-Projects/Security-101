@@ -1,0 +1,4 @@
+normal: output and exit status match baseline
+boundary: output and exit status match baseline
+failure: output and exit status match baseline
+All baseline-equivalence checks passed.

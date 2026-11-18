@@ -45,6 +45,24 @@ SCENARIOS: dict[str, dict[str, str]] = {
 }
 
 
+def review_control_alignment(
+    threat_category: object,
+    control_category: object,
+) -> tuple[str, list[str]]:
+    """Assess only whether the supplied threat and control categories agree."""
+    if (
+        isinstance(threat_category, str)
+        and threat_category
+        and isinstance(control_category, str)
+        and control_category
+        and threat_category == control_category
+    ):
+        return "matched", []
+    return "review", [
+        "control category does not match the stated threat category"
+    ]
+
+
 def evaluate_scenario(scenario: Mapping[str, Any]) -> dict[str, Any]:
     """Validate required answer fields and the declared control category."""
     fields = {
@@ -54,22 +72,10 @@ def evaluate_scenario(scenario: Mapping[str, Any]) -> dict[str, Any]:
     }
     missing_fields = [field for field in REQUIRED_FIELDS if not fields.get(field)]
 
-    threat_category = scenario.get("threat_category")
-    control_category = scenario.get("control_category")
-    if (
-        isinstance(threat_category, str)
-        and threat_category
-        and isinstance(control_category, str)
-        and control_category
-        and threat_category == control_category
-    ):
-        control_review = "matched"
-        review_reasons: list[str] = []
-    else:
-        control_review = "review"
-        review_reasons = [
-            "control category does not match the stated threat category"
-        ]
+    control_review, review_reasons = review_control_alignment(
+        scenario.get("threat_category"),
+        scenario.get("control_category"),
+    )
 
     status = "FAIL" if missing_fields else "REVIEW" if review_reasons else "PASS"
     return {

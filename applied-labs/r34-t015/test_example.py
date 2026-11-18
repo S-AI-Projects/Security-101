@@ -1,6 +1,6 @@
 import unittest
 
-from example import SCENARIOS, evaluate_scenario
+from example import SCENARIOS, evaluate_scenario, review_control_alignment
 
 
 class TestScenarioRubric(unittest.TestCase):
@@ -26,6 +26,19 @@ class TestScenarioRubric(unittest.TestCase):
         self.assertEqual(result["status"], "REVIEW")
         self.assertEqual(result["control_review"], "review")
         self.assertTrue(result["review_reasons"])
+
+    def test_alignment_helper_matches_and_flags_categories(self):
+        self.assertEqual(
+            review_control_alignment("data_exfiltration", "data_exfiltration"),
+            ("matched", []),
+        )
+        self.assertEqual(
+            review_control_alignment("data_exfiltration", "availability"),
+            (
+                "review",
+                ["control category does not match the stated threat category"],
+            ),
+        )
 
 
 if __name__ == "__main__":

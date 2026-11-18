@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/./applied-labs/r34-t015/check_results.py", line 49, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/./applied-labs/r34-t015/check_results.py", line 37, in main
+    assert actual == expected, (
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: normal changed from the baseline
+expected: (0, 'deliberately wrong result\n', '')
+actual:   (0, 'Scenario: normal (local fictional mock)\nAsset: Fictional customer invoice files\nThreat: A restricted invoice could be sent to an unauthorized external recipient.\nControl: Inspect outbound email for restricted invoice content and warn or block unapproved external sharing.\nResidual risk: A renamed or otherwise unrecognized attachment could evade inspection.\nMissing fields: none\nControl review: matched (none)\nRubric result: PASS\n', '')
