@@ -1,0 +1,26 @@
+{
+  "lesson_section": "7.1 Data security key concepts: What is data loss prevention (DLP)?",
+  "normal": {
+    "asset": "Fictional customer invoice files",
+    "threat": "A restricted invoice could be sent to an unauthorized external recipient.",
+    "control": "Inspect outbound email for restricted invoice content and warn or block unapproved external sharing.",
+    "residual_risk": "A renamed or otherwise unrecognized attachment could evade inspection.",
+    "threat_category": "data_exfiltration",
+    "control_category": "data_exfiltration"
+  },
+  "boundary": {
+    "threat": "A restricted invoice could be sent to an unauthorized external recipient.",
+    "control": "Inspect outbound email and block unapproved sharing.",
+    "residual_risk": "Unrecognized attachment formats could evade inspection.",
+    "threat_category": "data_exfiltration",
+    "control_category": "data_exfiltration"
+  },
+  "failure": {
+    "asset": "Fictional employee payroll records",
+    "threat": "Payroll data could be exposed through an unauthorized external email.",
+    "control": "Test backup restoration to reduce downtime after data loss.",
+    "residual_risk": "A successful restore does not prevent payroll data from being emailed to an unauthorized recipient.",
+    "threat_category": "data_exfiltration",
+    "control_category": "availability"
+  }
+}
