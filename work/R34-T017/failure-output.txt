@@ -1,0 +1,8 @@
+Scenario: failure (local fictional mock)
+Asset: Fictional public appointment-booking service
+Threat: A DDoS attack makes the booking service unavailable.
+Control: Rotate employee passwords on a schedule.
+Residual risk: Password rotation does not reduce the incoming traffic that exhausts the service.
+Missing fields: none
+Control review: review (control category does not match the stated threat category)
+Rubric result: REVIEW
