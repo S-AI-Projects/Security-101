@@ -1,0 +1,7 @@
+Scenario: recovery (local fictional mock)
+Input 1: boundary (incomplete)
+Error: missing required field 'asset'
+Result 1: FAIL
+Input 2: normal (valid)
+Result 2: PASS
+Recovery: next valid input accepted

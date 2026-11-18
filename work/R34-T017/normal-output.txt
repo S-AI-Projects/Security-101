@@ -1,0 +1,8 @@
+Scenario: normal (local fictional mock)
+Asset: Fictional employee mailbox credentials
+Threat: A phishing message tricks an employee into disclosing a password.
+Control: Verify unexpected sender requests and require multi-factor authentication for mailbox access.
+Residual risk: A stolen active session may still be misused before it is revoked.
+Missing fields: none
+Control review: matched (none)
+Rubric result: PASS

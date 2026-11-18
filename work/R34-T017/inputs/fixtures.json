@@ -1,0 +1,31 @@
+{
+  "lesson_section": "1.2 Common cybersecurity threats: What are the most common types?",
+  "scenarios": {
+    "normal": {
+      "asset": "Fictional employee mailbox credentials",
+      "threat": "A phishing message tricks an employee into disclosing a password.",
+      "control": "Verify unexpected sender requests and require multi-factor authentication for mailbox access.",
+      "residual_risk": "A stolen active session may still be misused before it is revoked.",
+      "threat_category": "credential_theft",
+      "control_category": "credential_theft"
+    },
+    "boundary": {
+      "asset": null,
+      "threat": "Ransomware encrypts files in a shared project folder.",
+      "control": "Keep tested offline backups to restore affected files.",
+      "residual_risk": "Recent changes may be lost between backups.",
+      "threat_category": "ransomware",
+      "control_category": "ransomware"
+    },
+    "failure": {
+      "asset": "Fictional public appointment-booking service",
+      "threat": "A DDoS attack makes the booking service unavailable.",
+      "control": "Rotate employee passwords on a schedule.",
+      "residual_risk": "Password rotation does not reduce the incoming traffic that exhausts the service.",
+      "threat_category": "availability",
+      "control_category": "credential_theft"
+    }
+  },
+  "recovery_sequence": ["boundary", "normal"],
+  "prerequisites": "Python 3 standard library only"
+}

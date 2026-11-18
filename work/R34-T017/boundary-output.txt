@@ -1,0 +1,9 @@
+Scenario: boundary (local fictional mock)
+Asset: MISSING
+Threat: Ransomware encrypts files in a shared project folder.
+Control: Keep tested offline backups to restore affected files.
+Residual risk: Recent changes may be lost between backups.
+Missing fields: asset
+Control review: matched (none)
+Rubric result: FAIL
+Error: missing required field(s): asset

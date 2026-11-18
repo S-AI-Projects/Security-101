@@ -1,0 +1,5 @@
+normal: matched explicit expected result
+boundary: matched explicit expected result
+failure: matched explicit expected result
+recovery: matched explicit expected result
+All scenario and recovery checks passed.

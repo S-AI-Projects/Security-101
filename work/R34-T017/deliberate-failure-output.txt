@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/./applied-labs/r34-t017/check_results.py", line 95, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/./applied-labs/r34-t017/check_results.py", line 83, in main
+    assert actual == expected, (
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: normal result mismatch
+expected: (0, 'deliberately wrong result\n', '')
+actual:   (0, 'Scenario: normal (local fictional mock)\nAsset: Fictional employee mailbox credentials\nThreat: A phishing message tricks an employee into disclosing a password.\nControl: Verify unexpected sender requests and require multi-factor authentication for mailbox access.\nResidual risk: A stolen active session may still be misused before it is revoked.\nMissing fields: none\nControl review: matched (none)\nRubric result: PASS\n', '')
