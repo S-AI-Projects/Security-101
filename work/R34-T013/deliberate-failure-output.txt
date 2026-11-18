@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/./applied-labs/r34-t013/check_results.py", line 96, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/./applied-labs/r34-t013/check_results.py", line 84, in main
+    assert actual == expected, (
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: normal result mismatch
+expected: (0, 'deliberately wrong result\n', '')
+actual:   (0, "Scenario: normal (local mock)\nClient capabilities: ['resources', 'tools']\nServer capabilities: ['prompts', 'tools']\nNegotiated capabilities: ['tools']\nResult: tools dispatched\n", '')

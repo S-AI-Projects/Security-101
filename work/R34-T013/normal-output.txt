@@ -1,0 +1,5 @@
+Scenario: normal (local mock)
+Client capabilities: ['resources', 'tools']
+Server capabilities: ['prompts', 'tools']
+Negotiated capabilities: ['tools']
+Result: tools dispatched
