@@ -1,0 +1,6 @@
+Scenario: boundary (local mock)
+Client capabilities: ['resources']
+Server capabilities: ['prompts', 'tools']
+Negotiated capabilities: []
+Rejected: capability 'tools' was not negotiated
+Handler invoked: False

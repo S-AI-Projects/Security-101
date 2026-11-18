@@ -1,0 +1,23 @@
+{
+  "normal": {
+    "client_capabilities": ["tools", "resources"],
+    "server_capabilities": ["tools", "prompts"],
+    "expected_negotiated_capabilities": ["tools"],
+    "requested_capability": "tools",
+    "expected_dispatch": true
+  },
+  "boundary": {
+    "client_capabilities": ["resources"],
+    "server_capabilities": ["tools", "prompts"],
+    "expected_negotiated_capabilities": [],
+    "requested_capability": "tools",
+    "expected_dispatch": false
+  },
+  "failure": {
+    "client_capabilities": ["tools", "resources"],
+    "server_capabilities": ["tools", "prompts"],
+    "expected_negotiated_capabilities": ["tools"],
+    "requested_capability": "resources",
+    "expected_dispatch": false
+  }
+}

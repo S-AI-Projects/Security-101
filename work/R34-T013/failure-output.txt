@@ -1,0 +1,6 @@
+Scenario: failure (local mock)
+Client capabilities: ['resources', 'tools']
+Server capabilities: ['prompts', 'tools']
+Negotiated capabilities: ['tools']
+Rejected: capability 'resources' was not negotiated
+Handler invoked: False
