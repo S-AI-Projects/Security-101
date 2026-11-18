@@ -1,0 +1,21 @@
+{
+  "allowlisted_cidr": "192.0.2.0/24",
+  "scenarios": {
+    "normal": {
+      "input_address": "192.0.2.1",
+      "expected_allowlisted": true,
+      "expected_exit_code": 0
+    },
+    "boundary": {
+      "input_address": "198.51.100.1",
+      "expected_allowlisted": false,
+      "expected_exit_code": 0
+    },
+    "failure": {
+      "input_address": "not-an-ip",
+      "expected": "ValueError",
+      "expected_exit_code": 1
+    }
+  },
+  "prerequisites": "Python 3 standard library only (ipaddress)"
+}

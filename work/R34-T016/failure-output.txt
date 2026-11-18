@@ -1,0 +1,4 @@
+Scenario: failure (local fixture; no network traffic)
+Allowlist: 192.0.2.0/24
+Input address: not-an-ip
+Error: invalid IP address 'not-an-ip'
