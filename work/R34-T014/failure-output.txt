@@ -1,0 +1,9 @@
+Scenario: failure (local fictional mock)
+Intermediate states: received -> normalized -> completeness -> control_review -> final
+Asset: Fictional fraud-detection model and transaction review queue
+Threat: Crafted inputs could evade the model and hide fraudulent transactions.
+Control: Encrypt stored training data to reduce unauthorized access to that data.
+Residual risk: Evasion may still occur because encryption at rest does not assess the model's behavior on crafted inputs.
+Missing fields: none
+Control review: review (control category does not match the stated threat category)
+Rubric result: REVIEW

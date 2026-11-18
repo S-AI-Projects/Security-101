@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/./applied-labs/r34-t014/check_results.py", line 106, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/./applied-labs/r34-t014/check_results.py", line 94, in main
+    assert actual == expected, (
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: normal result mismatch
+expected: (0, 'deliberately wrong result\n', '')
+actual:   (0, 'Scenario: normal (local fictional mock)\nIntermediate states: received -> normalized -> completeness -> control_review -> final\nAsset: Fictional customer-support training transcripts\nThreat: Personal information could be exposed from the training transcripts.\nControl: Remove direct identifiers and limit dataset access to approved staff because these steps reduce exposure of transcript data.\nResidual risk: Indirect identifiers may remain, and an authorized user could still misuse an accessible copy.\nMissing fields: none\nControl review: matched (none)\nRubric result: PASS\n', '')

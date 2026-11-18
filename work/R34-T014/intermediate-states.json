@@ -1,0 +1,160 @@
+{
+  "normal": [
+    {
+      "stage": "received",
+      "input": {
+        "lesson_section": "8.3 Responsible AI: How can I ensure my AI system is both secure and ethical?",
+        "asset": "Fictional customer-support training transcripts",
+        "threat": "Personal information could be exposed from the training transcripts.",
+        "control": "Remove direct identifiers and limit dataset access to approved staff because these steps reduce exposure of transcript data.",
+        "residual_risk": "Indirect identifiers may remain, and an authorized user could still misuse an accessible copy.",
+        "threat_category": "data_privacy",
+        "control_category": "data_privacy",
+        "scenario": "normal"
+      }
+    },
+    {
+      "stage": "normalized",
+      "fields": {
+        "asset": "Fictional customer-support training transcripts",
+        "threat": "Personal information could be exposed from the training transcripts.",
+        "control": "Remove direct identifiers and limit dataset access to approved staff because these steps reduce exposure of transcript data.",
+        "residual_risk": "Indirect identifiers may remain, and an authorized user could still misuse an accessible copy."
+      }
+    },
+    {
+      "stage": "completeness",
+      "missing_fields": []
+    },
+    {
+      "stage": "control_review",
+      "threat_category": "data_privacy",
+      "control_category": "data_privacy",
+      "result": "matched",
+      "reasons": []
+    },
+    {
+      "stage": "final",
+      "result": {
+        "scenario": "normal",
+        "status": "PASS",
+        "fields": {
+          "asset": "Fictional customer-support training transcripts",
+          "threat": "Personal information could be exposed from the training transcripts.",
+          "control": "Remove direct identifiers and limit dataset access to approved staff because these steps reduce exposure of transcript data.",
+          "residual_risk": "Indirect identifiers may remain, and an authorized user could still misuse an accessible copy."
+        },
+        "missing_fields": [],
+        "control_review": "matched",
+        "review_reasons": []
+      }
+    }
+  ],
+  "boundary": [
+    {
+      "stage": "received",
+      "input": {
+        "lesson_section": "8.3 Responsible AI: How can I ensure my AI system is both secure and ethical?",
+        "threat": "Personal information could be exposed from the training transcripts.",
+        "control": "Remove direct identifiers and limit dataset access.",
+        "residual_risk": "Indirect identifiers may remain in the fictional dataset.",
+        "threat_category": "data_privacy",
+        "control_category": "data_privacy",
+        "scenario": "boundary"
+      }
+    },
+    {
+      "stage": "normalized",
+      "fields": {
+        "threat": "Personal information could be exposed from the training transcripts.",
+        "control": "Remove direct identifiers and limit dataset access.",
+        "residual_risk": "Indirect identifiers may remain in the fictional dataset."
+      }
+    },
+    {
+      "stage": "completeness",
+      "missing_fields": [
+        "asset"
+      ]
+    },
+    {
+      "stage": "control_review",
+      "threat_category": "data_privacy",
+      "control_category": "data_privacy",
+      "result": "matched",
+      "reasons": []
+    },
+    {
+      "stage": "final",
+      "result": {
+        "scenario": "boundary",
+        "status": "FAIL",
+        "fields": {
+          "threat": "Personal information could be exposed from the training transcripts.",
+          "control": "Remove direct identifiers and limit dataset access.",
+          "residual_risk": "Indirect identifiers may remain in the fictional dataset."
+        },
+        "missing_fields": [
+          "asset"
+        ],
+        "control_review": "matched",
+        "review_reasons": []
+      }
+    }
+  ],
+  "failure": [
+    {
+      "stage": "received",
+      "input": {
+        "lesson_section": "8.3 Responsible AI: How can I ensure my AI system is both secure and ethical?",
+        "asset": "Fictional fraud-detection model and transaction review queue",
+        "threat": "Crafted inputs could evade the model and hide fraudulent transactions.",
+        "control": "Encrypt stored training data to reduce unauthorized access to that data.",
+        "residual_risk": "Evasion may still occur because encryption at rest does not assess the model's behavior on crafted inputs.",
+        "threat_category": "model_evasion",
+        "control_category": "data_privacy",
+        "scenario": "failure"
+      }
+    },
+    {
+      "stage": "normalized",
+      "fields": {
+        "asset": "Fictional fraud-detection model and transaction review queue",
+        "threat": "Crafted inputs could evade the model and hide fraudulent transactions.",
+        "control": "Encrypt stored training data to reduce unauthorized access to that data.",
+        "residual_risk": "Evasion may still occur because encryption at rest does not assess the model's behavior on crafted inputs."
+      }
+    },
+    {
+      "stage": "completeness",
+      "missing_fields": []
+    },
+    {
+      "stage": "control_review",
+      "threat_category": "model_evasion",
+      "control_category": "data_privacy",
+      "result": "review",
+      "reasons": [
+        "control category does not match the stated threat category"
+      ]
+    },
+    {
+      "stage": "final",
+      "result": {
+        "scenario": "failure",
+        "status": "REVIEW",
+        "fields": {
+          "asset": "Fictional fraud-detection model and transaction review queue",
+          "threat": "Crafted inputs could evade the model and hide fraudulent transactions.",
+          "control": "Encrypt stored training data to reduce unauthorized access to that data.",
+          "residual_risk": "Evasion may still occur because encryption at rest does not assess the model's behavior on crafted inputs."
+        },
+        "missing_fields": [],
+        "control_review": "review",
+        "review_reasons": [
+          "control category does not match the stated threat category"
+        ]
+      }
+    }
+  ]
+}
