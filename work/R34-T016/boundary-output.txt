@@ -1,0 +1,4 @@
+Scenario: boundary (local fixture; no network traffic)
+Allowlist: 192.0.2.0/24
+Input address: 198.51.100.1
+Allowlisted: no

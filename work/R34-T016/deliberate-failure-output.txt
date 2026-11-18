@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/./applied-labs/r34-t016/check_results.py", line 71, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/chaitanyasalunke/Security-101-SnAI1/./applied-labs/r34-t016/check_results.py", line 59, in main
+    assert actual == expected, (
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: normal result mismatch
+expected: (0, 'deliberately wrong result\n', '')
+actual:   (0, 'Scenario: normal (local fixture; no network traffic)\nAllowlist: 192.0.2.0/24\nInput address: 192.0.2.1\nAllowlisted: yes\n', '')

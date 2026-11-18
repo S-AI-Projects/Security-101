@@ -1,0 +1,4 @@
+Scenario: normal (local fixture; no network traffic)
+Allowlist: 192.0.2.0/24
+Input address: 192.0.2.1
+Allowlisted: yes
