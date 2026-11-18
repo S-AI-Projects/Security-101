@@ -1,0 +1,8 @@
+Scenario: normal (local fictional mock)
+Asset: Fictional customer invoice files
+Threat: A restricted invoice could be sent to an unauthorized external recipient.
+Control: Inspect outbound email for restricted invoice content and warn or block unapproved external sharing.
+Residual risk: A renamed or otherwise unrecognized attachment could evade inspection.
+Missing fields: none
+Control review: matched (none)
+Rubric result: PASS

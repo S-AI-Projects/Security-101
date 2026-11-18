@@ -1,0 +1,8 @@
+Scenario: boundary (local fictional mock)
+Asset: MISSING
+Threat: A restricted invoice could be sent to an unauthorized external recipient.
+Control: Inspect outbound email and block unapproved sharing.
+Residual risk: Unrecognized attachment formats could evade inspection.
+Missing fields: asset
+Control review: matched (none)
+Rubric result: FAIL

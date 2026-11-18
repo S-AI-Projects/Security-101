@@ -1,0 +1,4 @@
+normal=0
+boundary=1
+failure=0
+deliberate_failure=1

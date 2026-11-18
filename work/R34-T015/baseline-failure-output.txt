@@ -1,0 +1,8 @@
+Scenario: failure (local fictional mock)
+Asset: Fictional employee payroll records
+Threat: Payroll data could be exposed through an unauthorized external email.
+Control: Test backup restoration to reduce downtime after data loss.
+Residual risk: A successful restore does not prevent payroll data from being emailed to an unauthorized recipient.
+Missing fields: none
+Control review: review (control category does not match the stated threat category)
+Rubric result: REVIEW
