@@ -1,0 +1,4 @@
+{
+  "status": "FLAGGED_FOR_REVIEW",
+  "message": "Flagged for review: Physical control does not mitigate network/software threat."
+}

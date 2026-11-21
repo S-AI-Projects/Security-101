@@ -1,0 +1,5 @@
+{
+  "status": "FAIL",
+  "missing_field": "asset",
+  "message": "Missing required field 'asset'."
+}

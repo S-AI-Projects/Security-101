@@ -1,0 +1,20 @@
+{
+  "normal": {
+    "asset": "Corporate Employee Laptops",
+    "threat": "Spear-phishing attachment executing ransomware payload",
+    "control": "Endpoint Detection and Response (EDR) and automated email sandboxing",
+    "residual_risk": "Polymorphic payload execution prior to detection signature update"
+  },
+  "missing_asset": {
+    "asset": "",
+    "threat": "Credential stuffing attack against corporate portal",
+    "control": "Account lockout threshold and mandatory MFA",
+    "residual_risk": "MFA prompt fatigue attack"
+  },
+  "unrelated_control": {
+    "asset": "Corporate Mail Server",
+    "threat": "Distributed Denial of Service (DDoS) syn-flood",
+    "control": "Quarterly hard drive physical degaussing in basement storage",
+    "residual_risk": "Improper magnetic degaussing calibration"
+  }
+}

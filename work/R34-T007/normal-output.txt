@@ -1,0 +1,4 @@
+{
+  "status": "PASS",
+  "message": "Scenario is complete and internally consistent."
+}
