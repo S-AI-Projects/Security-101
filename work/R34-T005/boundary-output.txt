@@ -1,0 +1,4 @@
+{
+  "status": "FLAGGED_FOR_REVIEW",
+  "message": "Flagged for review: Control is physical but threat is digital data exfiltration."
+}

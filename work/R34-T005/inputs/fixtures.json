@@ -1,0 +1,20 @@
+{
+  "normal": {
+    "asset": "Customer Credit Card & Financial Records",
+    "threat": "Data exfiltration via unencrypted public API query",
+    "control": "TLS 1.3 transit encryption, AES-256 field encryption, and tokenized API auth",
+    "residual_risk": "Compromised administrative credentials accessing key vault"
+  },
+  "missing_asset": {
+    "asset": "",
+    "threat": "Unauthorized database backup exfiltration",
+    "control": "Database transparent data encryption and export auditing",
+    "residual_risk": "Insider theft of encryption keys"
+  },
+  "unrelated_control": {
+    "asset": "Patient Medical History Database",
+    "threat": "SQL injection exfiltrating plaintext patient records",
+    "control": "Paper shredder disposal policy in corporate mailroom",
+    "residual_risk": "Improper physical document shredding"
+  }
+}
