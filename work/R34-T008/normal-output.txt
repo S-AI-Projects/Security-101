@@ -1,0 +1,4 @@
+{
+  "status": "PASS",
+  "message": "SecOps scenario validated successfully."
+}

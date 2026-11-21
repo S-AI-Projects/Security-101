@@ -1,0 +1,20 @@
+{
+  "normal": {
+    "asset": "Centralized SIEM Log Aggregator",
+    "threat": "Log injection attack attempting to forge audit trails",
+    "control": "Cryptographic log signing and immutable WORM storage",
+    "residual_risk": "Compromised log ingestion certificate"
+  },
+  "missing_asset": {
+    "asset": "",
+    "threat": "Alert fatigue blinding analysts to active malware",
+    "control": "SOAR automated triage and deduplication playbooks",
+    "residual_risk": "Over-filtering of novel attack patterns"
+  },
+  "unrelated_control": {
+    "asset": "Security Operations Center (SOC) Workstation",
+    "threat": "Phishing-based credential exfiltration of analyst session",
+    "control": "Security turnstiles at facility entrance",
+    "residual_risk": "Physical badge cloning"
+  }
+}

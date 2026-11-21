@@ -1,0 +1,4 @@
+{
+  "status": "FLAGGED_FOR_REVIEW",
+  "error": "Flagged for review: Physical control does not mitigate digital SecOps threat."
+}
