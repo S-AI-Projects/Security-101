@@ -1,0 +1,4 @@
+{
+  "status": "ALLOWED",
+  "execution_result": "Tool 'read' executed with path='/safe/data.txt'."
+}

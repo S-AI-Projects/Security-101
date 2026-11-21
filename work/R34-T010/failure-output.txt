@@ -1,0 +1,4 @@
+{
+  "status": "REJECTED",
+  "reason": "Tool 'delete' is not in the allowed-tool set."
+}

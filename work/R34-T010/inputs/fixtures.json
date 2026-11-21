@@ -1,0 +1,27 @@
+[
+  {
+    "action": {
+      "tool": "read",
+      "args": {
+        "path": "/safe/data.txt"
+      }
+    },
+    "expected": "ALLOWED"
+  },
+  {
+    "action": {
+      "tool": "delete",
+      "args": {
+        "path": "/safe/data.txt"
+      }
+    },
+    "expected": "REJECTED"
+  },
+  {
+    "action": {
+      "tool": "read",
+      "args": {}
+    },
+    "expected": "REJECTED"
+  }
+]
