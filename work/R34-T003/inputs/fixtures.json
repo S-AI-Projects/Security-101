@@ -1,0 +1,46 @@
+[
+  {
+    "input": {
+      "tool": "add",
+      "a": 2,
+      "b": 3
+    },
+    "expected": {
+      "status": "success",
+      "result": 5
+    }
+  },
+  {
+    "input": {
+      "tool": "multiply",
+      "a": 2,
+      "b": 3
+    },
+    "expected": {
+      "status": "success",
+      "result": 6
+    }
+  },
+  {
+    "input": {
+      "tool": "unknown",
+      "a": 2,
+      "b": 3
+    },
+    "expected": {
+      "status": "error",
+      "error_type": "UNKNOWN_TOOL"
+    }
+  },
+  {
+    "input": {
+      "tool": "add",
+      "a": "str",
+      "b": 3
+    },
+    "expected": {
+      "status": "error",
+      "error_type": "INVALID_ARGUMENT"
+    }
+  }
+]

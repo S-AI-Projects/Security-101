@@ -1,0 +1,5 @@
+{
+  "status": "error",
+  "error_type": "UNKNOWN_TOOL",
+  "message": "Tool 'unknown' is not in the allowed list: ['add', 'multiply']"
+}

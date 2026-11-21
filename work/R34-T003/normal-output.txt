@@ -1,0 +1,5 @@
+{
+  "status": "success",
+  "tool": "add",
+  "result": 5
+}
