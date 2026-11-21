@@ -1,0 +1,26 @@
+[
+  {
+    "role": "reader",
+    "action": "read",
+    "resource": "public",
+    "expected": "ALLOW"
+  },
+  {
+    "role": "reader",
+    "action": "write",
+    "resource": "public",
+    "expected": "DENY"
+  },
+  {
+    "role": "auditor",
+    "action": "audit",
+    "resource": "logs",
+    "expected": "DENY"
+  },
+  {
+    "role": "stranger",
+    "action": "read",
+    "resource": "public",
+    "expected": "DENY"
+  }
+]

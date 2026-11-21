@@ -1,0 +1,4 @@
+{
+  "decision": "ALLOW",
+  "reason": "Permission granted for role 'reader' to 'read' on 'public'."
+}

@@ -1,0 +1,4 @@
+{
+  "decision": "DENY",
+  "reason": "Explicit DENY rule overrides any ALLOW for role 'reader' on 'public'."
+}
