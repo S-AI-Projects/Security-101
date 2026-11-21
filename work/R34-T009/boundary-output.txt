@@ -1,0 +1,4 @@
+{
+  "status": "FAIL",
+  "error": "Argument array required: 'args' must be a list of strings, not a single string or missing."
+}

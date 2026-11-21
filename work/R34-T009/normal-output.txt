@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "validated_configuration": {
+    "command": "uvicorn",
+    "args": [
+      "main:app",
+      "--port",
+      "8000"
+    ],
+    "environment_keys": [
+      "API_TOKEN",
+      "ENV"
+    ],
+    "redacted_env": {
+      "API_TOKEN": "[REDACTED]",
+      "ENV": "[REDACTED]"
+    }
+  },
+  "process_launched": false
+}

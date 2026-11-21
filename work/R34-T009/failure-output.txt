@@ -1,0 +1,4 @@
+{
+  "status": "FAIL",
+  "error": "Missing or invalid 'command' field."
+}

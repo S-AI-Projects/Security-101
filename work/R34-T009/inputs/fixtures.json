@@ -1,0 +1,30 @@
+[
+  {
+    "name": "valid",
+    "config": {
+      "command": "python3",
+      "args": [
+        "app.py"
+      ],
+      "env": {
+        "SECRET": "xyz"
+      }
+    }
+  },
+  {
+    "name": "missing_cmd",
+    "config": {
+      "command": "",
+      "args": [
+        "app.py"
+      ]
+    }
+  },
+  {
+    "name": "string_args",
+    "config": {
+      "command": "python3",
+      "args": "app.py"
+    }
+  }
+]
