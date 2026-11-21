@@ -1,0 +1,27 @@
+[
+  {
+    "action": {
+      "tool": "read_document",
+      "args": {
+        "path": "/valid/path.txt"
+      }
+    },
+    "expected": "EXECUTED"
+  },
+  {
+    "action": {
+      "tool": "delete_document",
+      "args": {
+        "path": "/valid/path.txt"
+      }
+    },
+    "expected": "REJECTED"
+  },
+  {
+    "action": {
+      "tool": "read_document",
+      "args": {}
+    },
+    "expected": "REJECTED"
+  }
+]

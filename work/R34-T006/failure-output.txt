@@ -1,0 +1,4 @@
+{
+  "status": "REJECTED",
+  "reason": "Tool 'delete_document' is not in the allowed tool set: ['read_document']."
+}

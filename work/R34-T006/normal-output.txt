@@ -1,0 +1,4 @@
+{
+  "status": "EXECUTED",
+  "output": "Executed read_document successfully with path '/safe/data.txt'."
+}
