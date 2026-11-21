@@ -1,0 +1,20 @@
+{
+  "normal": {
+    "asset": "Production Kubernetes Container Cluster",
+    "threat": "Unpatched container runtime vulnerability allowing container breakout",
+    "control": "Automated vulnerability scanning and monthly rolling OS and node patching",
+    "residual_risk": "Zero-day vulnerability window before security patch publication"
+  },
+  "missing_asset": {
+    "asset": "",
+    "threat": "Unauthorized SSH brute-force attack against Linux host",
+    "control": "Disable password authentication and enforce bastion host with MFA",
+    "residual_risk": "Compromise of engineer bastion credentials"
+  },
+  "unrelated_control": {
+    "asset": "Payment Processing Database Host",
+    "threat": "Remote buffer overflow vulnerability in unpatched web service",
+    "control": "Physical security turnstiles and visitor badge requirements",
+    "residual_risk": "Physical tailgating through headquarters gate"
+  }
+}
