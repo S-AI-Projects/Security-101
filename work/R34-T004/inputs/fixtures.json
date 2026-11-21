@@ -1,0 +1,13 @@
+{
+  "client_capabilities": [
+    "tools",
+    "resources"
+  ],
+  "server_capabilities": [
+    "tools",
+    "prompts"
+  ],
+  "expected_negotiated": [
+    "tools"
+  ]
+}

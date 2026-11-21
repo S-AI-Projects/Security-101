@@ -1,0 +1,21 @@
+{
+  "negotiation_trace": {
+    "step_1_client_offered": [
+      "resources",
+      "tools"
+    ],
+    "step_2_server_supported": [
+      "prompts",
+      "tools"
+    ],
+    "step_3_negotiated": [
+      "tools"
+    ]
+  },
+  "invocation_result": {
+    "status": "REJECTED",
+    "dispatched": false,
+    "capability": "prompts",
+    "reason": "Capability 'prompts' was not negotiated."
+  }
+}
