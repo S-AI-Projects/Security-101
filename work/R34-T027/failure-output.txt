@@ -1,0 +1,2 @@
+Scenario: Failure check based on "6.1 Infrastructure security key concepts.md"; rejects malformed scenario types or invalid answer structures.
+Error: Scenario answer must be a dict, got str

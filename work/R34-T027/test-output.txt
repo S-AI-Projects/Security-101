@@ -1,0 +1,31 @@
+test_boundary_scenario_execution (test_example.InfrastructureRubricTests)
+Boundary scenario runs with exit code 0. ... ok
+test_boundary_scenarios_missing_or_blank_fields (test_example.InfrastructureRubricTests)
+Boundary inputs with blank fields fail gracefully. ... ok
+test_complete_scenario_passes (test_example.InfrastructureRubricTests)
+One complete scenario passes: kubernetes-host-patching returns PASS. ... ok
+test_deliberate_wrong_result_fails (test_example.InfrastructureRubricTests)
+Deliberate wrong result assertion fails with AssertionError. ... ok
+test_failure_scenario_execution (test_example.InfrastructureRubricTests)
+Failure scenario runs with exit code 1 on non-dict input. ... ok
+test_intermediate_state_trace_recorded (test_example.InfrastructureRubricTests)
+Focus: Intermediate state after each step is recorded in structured trace. ... ok
+test_invariant_linking_state_to_final_output_fail (test_example.InfrastructureRubricTests)
+Test the invariant linking missing field state to FAIL output. ... ok
+test_invariant_linking_state_to_final_output_pass (test_example.InfrastructureRubricTests)
+Test the invariant linking intermediate state to PASS output. ... ok
+test_invariant_linking_state_to_final_output_review (test_example.InfrastructureRubricTests)
+Test the invariant linking unaligned control state to REVIEW output. ... ok
+test_mismatched_control_flagged_for_review (test_example.InfrastructureRubricTests)
+A control unrelated to the named threat is flagged for review. ... ok
+test_missing_asset_fails (test_example.InfrastructureRubricTests)
+A scenario without an asset fails: missing-asset-image-scan returns FAIL (asset is required). ... ok
+test_normal_scenario_execution (test_example.InfrastructureRubricTests)
+Normal scenario runs with exit code 0. ... ok
+test_scenario_citations_cite_lesson (test_example.InfrastructureRubricTests)
+Scenario explanations cite 6.1 Infrastructure security key concepts.md. ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK

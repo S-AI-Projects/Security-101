@@ -1,0 +1,3 @@
+Scenario: Boundary checks for incomplete scenario answers based on "6.1 Infrastructure security key concepts.md"; evaluates missing fields and blank entries.
+blank-residual-risk: FAIL (residual_risk is required)
+blank-control: FAIL (control is required)

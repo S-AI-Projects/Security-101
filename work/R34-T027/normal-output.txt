@@ -1,0 +1,4 @@
+Scenario: Illustrative infrastructure scenario rubric evaluation based on "6.1 Infrastructure security key concepts.md"; structural evaluation, not automated human grading.
+kubernetes-host-patching: PASS
+missing-asset-image-scan: FAIL (asset is required)
+mismatched-control-registry: REVIEW (control needs a rationale)

@@ -1,0 +1,42 @@
+{
+  "description": "Fixtures for infrastructure security scenario rubric checker and state trace (R34-T027, 6.1 Infrastructure security key concepts.md)",
+  "scenarios": {
+    "kubernetes-host-patching": {
+      "asset": "Production Kubernetes container host",
+      "threat": "unpatched kernel vulnerability allowing container escape",
+      "control": "automated os kernel patch management and reboot scheduling",
+      "residual_risk": "Zero-day kernel flaws remain exposed until vendor patch release.",
+      "expected_outcome": "PASS"
+    },
+    "missing-asset-image-scan": {
+      "threat": "vulnerable base image deployed to cluster",
+      "control": "container registry image vulnerability scanning before deployment",
+      "residual_risk": "Vulnerabilities discovered post-deployment require runtime detection.",
+      "expected_outcome": "FAIL (asset is required)"
+    },
+    "mismatched-control-registry": {
+      "asset": "Container registry repository",
+      "threat": "vulnerable base image deployed to cluster",
+      "control": "automated os kernel patch management and reboot scheduling",
+      "residual_risk": "Host kernel patching does not detect vulnerable application dependencies in images.",
+      "expected_outcome": "REVIEW (control needs a rationale)"
+    }
+  },
+  "boundary_scenarios": {
+    "blank-residual-risk": {
+      "asset": "Production Kubernetes container host",
+      "threat": "unpatched kernel vulnerability allowing container escape",
+      "control": "automated os kernel patch management and reboot scheduling",
+      "residual_risk": "   ",
+      "expected_outcome": "FAIL (residual_risk is required)"
+    },
+    "blank-control": {
+      "asset": "Production Kubernetes container host",
+      "threat": "unpatched kernel vulnerability allowing container escape",
+      "control": "",
+      "residual_risk": "Risk remains unmitigated.",
+      "expected_outcome": "FAIL (control is required)"
+    }
+  },
+  "failure_fixture": "not_a_valid_scenario_dict"
+}
