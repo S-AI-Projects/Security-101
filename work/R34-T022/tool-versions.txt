@@ -1,0 +1,7 @@
+Python 3.9.6
+normal_exit=0
+boundary_exit=0
+failure_exit=1
+explain_exit=0
+tests_exit=0
+deliberate_assertion_exit=1

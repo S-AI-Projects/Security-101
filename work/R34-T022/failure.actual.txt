@@ -1,0 +1,3 @@
+Scenario: invalid/boundary fixtures based on "6.2 Infrastructure security capabilities.md".
+Missing asset result=fail
+Boundary control result=review

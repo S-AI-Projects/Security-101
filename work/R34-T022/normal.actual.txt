@@ -1,0 +1,7 @@
+Scenario: smallest-valid rubric based on "6.2 Infrastructure security capabilities.md".
+fixture=Smallest valid
+asset=Server
+threat=known server vulnerability
+control=apply vendor patch
+residual_risk=zero-day risk remains
+result=pass

@@ -1,0 +1,5 @@
+Scenario: smallest-valid/boundary/invalid based on "6.2 Infrastructure security capabilities.md".
+Smallest valid=pass
+Boundary control=review
+Missing asset=fail
+Boundary decision=non-empty unrelated control is review; empty required field is fail

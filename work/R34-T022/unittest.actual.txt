@@ -1,0 +1,15 @@
+test_boundary_scenario_exact_decisions (test_example.InfrastructureRubricTests) ... ok
+test_deliberate_wrong_result_fails (test_example.InfrastructureRubricTests) ... ok
+test_exact_boundary_empty_vs_unrelated (test_example.InfrastructureRubricTests) ... ok
+test_failure_scenario_reports_invalid_and_boundary (test_example.InfrastructureRubricTests) ... ok
+test_human_explanation_limit (test_example.InfrastructureRubricTests) ... ok
+test_missing_asset_fails (test_example.InfrastructureRubricTests) ... ok
+test_nonempty_unrelated_control_is_review (test_example.InfrastructureRubricTests) ... ok
+test_normal_scenario_exact_output (test_example.InfrastructureRubricTests) ... ok
+test_smallest_valid_has_only_required_fields (test_example.InfrastructureRubricTests) ... ok
+test_smallest_valid_scenario_passes (test_example.InfrastructureRubricTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK

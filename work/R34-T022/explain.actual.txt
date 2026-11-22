@@ -1,0 +1,6 @@
+Worked fixture for 6.2 Infrastructure security capabilities.md
+smallest_valid=pass
+boundary_control=review
+invalid_missing_asset=fail
+boundary_rule=empty required field -> fail; non-empty unrelated control -> review
+human_explanation_review_required=true
