@@ -1,0 +1,5 @@
+Scenario: Canonical binary classification evaluation based on "7.1 Data security key concepts.md"; computes TP, FN, FP, TN, precision, and recall on balanced fixture.
+y_true=[1, 1, 0, 0], y_pred=[1, 0, 1, 0]
+Confusion matrix: TP=1, FN=1, FP=1, TN=1
+precision=0.500, recall=0.500
+Zero-denominator policy: explicit 0.0 fallback when denominator is 0.

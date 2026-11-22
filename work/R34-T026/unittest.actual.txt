@@ -1,0 +1,31 @@
+test_all_correct_predictions (test_example.ClassificationMetricsTests)
+Perfect classification yields precision=1.0 and recall=1.0. ... ok
+test_boundary_scenario_execution (test_example.ClassificationMetricsTests)
+Boundary scenario runs with exit code 0. ... ok
+test_canonical_fixture_counts_and_metrics (test_example.ClassificationMetricsTests)
+Canonical test: y_true=[1,1,0,0], y_pred=[1,0,1,0] yields TP=1, FN=1, FP=1, TN=1, precision=recall=0.5. ... ok
+test_deliberate_wrong_result_fails (test_example.ClassificationMetricsTests)
+Deliberate wrong result assertion fails with AssertionError. ... ok
+test_empty_sequence_rejected (test_example.ClassificationMetricsTests)
+Empty label sequences raise ValueError. ... ok
+test_exact_example_regression_output (test_example.ClassificationMetricsTests)
+Focus: Regression test asserting exact CLI output matches documented text. ... ok
+test_failure_scenario_execution (test_example.ClassificationMetricsTests)
+Failure scenario runs with exit code 1 on mismatched input lengths. ... ok
+test_mismatched_sequence_lengths_rejected (test_example.ClassificationMetricsTests)
+Mismatched sequence lengths raise ValueError. ... ok
+test_non_binary_labels_rejected (test_example.ClassificationMetricsTests)
+Non-binary labels raise ValueError. ... ok
+test_scenario_citations_cite_lesson (test_example.ClassificationMetricsTests)
+Scenario explanations cite 7.1 Data security key concepts.md. ... ok
+test_worked_explanation_contains_step_traces (test_example.ClassificationMetricsTests)
+Focus: Worked input-to-output explanation details each index step and metric formula. ... ok
+test_zero_positive_predictions_precision_is_zero (test_example.ClassificationMetricsTests)
+No positive predictions yields precision=0.0 under the documented zero-denominator policy. ... ok
+test_zero_positive_true_labels_recall_is_zero (test_example.ClassificationMetricsTests)
+No positive true labels yields recall=0.0 under the documented zero-denominator policy. ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK

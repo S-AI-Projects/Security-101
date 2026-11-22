@@ -1,0 +1,2 @@
+Scenario: Failure check based on "7.1 Data security key concepts.md"; rejects mismatched sequence lengths or non-binary labels.
+Error: Mismatched sequence lengths: len(y_true)=2 != len(y_pred)=1

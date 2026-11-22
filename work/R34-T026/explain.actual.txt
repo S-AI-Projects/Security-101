@@ -1,0 +1,12 @@
+Worked Input-to-Output Explanation:
+Input y_true: [1, 1, 0, 0]
+Input y_pred: [1, 0, 1, 0]
+Step-by-step element evaluation:
+  Index 0: actual=1, predicted=1 -> True Positive (TP) | Counts: TP=1, FN=0, FP=0, TN=0
+  Index 1: actual=1, predicted=0 -> False Negative (FN) | Counts: TP=1, FN=1, FP=0, TN=0
+  Index 2: actual=0, predicted=1 -> False Positive (FP) | Counts: TP=1, FN=1, FP=1, TN=0
+  Index 3: actual=0, predicted=0 -> True Negative (TN) | Counts: TP=1, FN=1, FP=1, TN=1
+Final Confusion Matrix: TP=1, FN=1, FP=1, TN=1
+Precision calculation: TP / (TP + FP) = 1 / (1 + 1) = 0.500
+Recall calculation:    TP / (TP + FN) = 1 / (1 + 1) = 0.500
+Zero-denominator policy: If denominator is zero, metric defaults to 0.0.
