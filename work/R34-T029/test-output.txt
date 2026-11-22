@@ -1,0 +1,35 @@
+test_boundary_scenario_execution (test_example.IAMPolicyEvaluatorTests)
+Boundary scenario runs with code 0 and evaluates edge requests. ... ok
+test_configuration_comparison_trade_off (test_example.IAMPolicyEvaluatorTests)
+Compare three controlled configurations: verify 100% correctness and linear check scaling. ... ok
+test_deliberate_wrong_result_fails (test_example.IAMPolicyEvaluatorTests)
+A deliberate wrong result assertion fails with AssertionError. ... ok
+test_empty_or_blank_attributes_denied (test_example.IAMPolicyEvaluatorTests)
+Empty, whitespace, or missing request attributes evaluate to DENY. ... ok
+test_explicit_deny_overrides_matching_allow (test_example.IAMPolicyEvaluatorTests)
+An explicit deny overrides a matching allow: evaluates to DENY. ... ok
+test_failure_scenario_execution (test_example.IAMPolicyEvaluatorTests)
+Failure scenario runs with code 1 and outputs error for invalid policy effect. ... ok
+test_invalid_policy_effect_raises_value_error (test_example.IAMPolicyEvaluatorTests)
+validate_policies raises ValueError on invalid effect. ... ok
+test_missing_policy_field_raises_value_error (test_example.IAMPolicyEvaluatorTests)
+validate_policies raises ValueError on missing fields. ... ok
+test_normal_scenario_execution (test_example.IAMPolicyEvaluatorTests)
+Normal scenario runs with code 0 and formats decisions. ... ok
+test_reader_cannot_write_public (test_example.IAMPolicyEvaluatorTests)
+reader cannot write: evaluates to DENY. ... ok
+test_reader_may_read_public (test_example.IAMPolicyEvaluatorTests)
+reader may read public: evaluates to ALLOW. ... ok
+test_scenario_citations_cite_lesson (test_example.IAMPolicyEvaluatorTests)
+All scenario explanation headers must cite 2.3 IAM capabilities.md. ... ok
+test_unknown_role_is_denied (test_example.IAMPolicyEvaluatorTests)
+An unknown role is denied under default-deny: evaluates to DENY. ... ok
+test_unspecified_action_default_deny (test_example.IAMPolicyEvaluatorTests)
+Unlisted actions for a known role evaluate to DENY under default-deny. ... ok
+test_unspecified_resource_default_deny (test_example.IAMPolicyEvaluatorTests)
+Unlisted resources evaluate to DENY under default-deny. ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.001s
+
+OK

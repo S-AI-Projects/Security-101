@@ -1,0 +1,2 @@
+Scenario: Failure check based on "2.3 IAM capabilities.md"; rejects malformed policy entries.
+Error: Invalid policy effect 'PERMIT' for role 'reader'. Allowed effects: ALLOW, DENY

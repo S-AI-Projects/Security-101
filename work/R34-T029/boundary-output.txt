@@ -1,0 +1,5 @@
+Scenario: Boundary checks for IAM policy evaluation based on "2.3 IAM capabilities.md"; tests edge inputs and default-deny fallbacks.
+role | action | resource | decision | reason
+reader | read | private | DENY | No policy grants role 'reader' permission to 'read' on 'private' (default deny).
+auditor | delete | logs | DENY | No policy grants role 'auditor' permission to 'delete' on 'logs' (default deny).
+reader |  | public | DENY | Malformed or empty request attribute (default deny).

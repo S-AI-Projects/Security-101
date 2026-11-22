@@ -1,0 +1,7 @@
+Scenario: Illustrative IAM policy evaluation based on "2.3 IAM capabilities.md"; educational mock matrix, not real identity provider.
+role | action | resource | decision | reason
+reader | read | public | ALLOW | Permission granted for role 'reader' to 'read' on 'public'.
+reader | write | public | DENY | Explicit DENY rule matched for role 'reader' on 'public'.
+auditor | audit | logs | DENY | Explicit DENY overrides matching ALLOW for role 'auditor' on 'logs'.
+stranger | read | public | DENY | Role 'stranger' is unknown or not recognized (default deny).
+reader | delete | public | DENY | No policy grants role 'reader' permission to 'delete' on 'public' (default deny).

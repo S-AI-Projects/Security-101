@@ -1,0 +1,55 @@
+{
+  "description": "IAM access policy evaluator fixtures and controlled configuration comparison for R34-T029 (2.3 IAM capabilities.md)",
+  "standard_policy_matrix": [
+    {"role": "reader", "action": "read", "resource": "public", "effect": "ALLOW"},
+    {"role": "reader", "action": "write", "resource": "public", "effect": "DENY"},
+    {"role": "editor", "action": "read", "resource": "public", "effect": "ALLOW"},
+    {"role": "editor", "action": "write", "resource": "public", "effect": "ALLOW"},
+    {"role": "auditor", "action": "audit", "resource": "logs", "effect": "ALLOW"},
+    {"role": "auditor", "action": "audit", "resource": "logs", "effect": "DENY"}
+  ],
+  "controlled_configurations": {
+    "Config 1 (Minimal)": [
+      {"role": "reader", "action": "read", "resource": "public", "effect": "ALLOW"},
+      {"role": "reader", "action": "write", "resource": "public", "effect": "DENY"},
+      {"role": "editor", "action": "read", "resource": "public", "effect": "ALLOW"}
+    ],
+    "Config 2 (Standard)": [
+      {"role": "reader", "action": "read", "resource": "public", "effect": "ALLOW"},
+      {"role": "reader", "action": "write", "resource": "public", "effect": "DENY"},
+      {"role": "editor", "action": "read", "resource": "public", "effect": "ALLOW"},
+      {"role": "editor", "action": "write", "resource": "public", "effect": "ALLOW"},
+      {"role": "auditor", "action": "audit", "resource": "logs", "effect": "ALLOW"},
+      {"role": "auditor", "action": "audit", "resource": "logs", "effect": "DENY"}
+    ],
+    "Config 3 (Comprehensive)": [
+      {"role": "reader", "action": "read", "resource": "public", "effect": "ALLOW"},
+      {"role": "reader", "action": "write", "resource": "public", "effect": "DENY"},
+      {"role": "editor", "action": "read", "resource": "public", "effect": "ALLOW"},
+      {"role": "editor", "action": "write", "resource": "public", "effect": "ALLOW"},
+      {"role": "auditor", "action": "audit", "resource": "logs", "effect": "ALLOW"},
+      {"role": "auditor", "action": "audit", "resource": "logs", "effect": "DENY"},
+      {"role": "admin", "action": "read", "resource": "public", "effect": "ALLOW"},
+      {"role": "admin", "action": "write", "resource": "public", "effect": "ALLOW"},
+      {"role": "admin", "action": "delete", "resource": "public", "effect": "ALLOW"},
+      {"role": "admin", "action": "delete", "resource": "system", "effect": "DENY"},
+      {"role": "visitor", "action": "read", "resource": "public", "effect": "ALLOW"},
+      {"role": "visitor", "action": "write", "resource": "public", "effect": "DENY"}
+    ]
+  },
+  "normal_requests": [
+    {"role": "reader", "action": "read", "resource": "public", "expected": "ALLOW"},
+    {"role": "reader", "action": "write", "resource": "public", "expected": "DENY"},
+    {"role": "auditor", "action": "audit", "resource": "logs", "expected": "DENY"},
+    {"role": "stranger", "action": "read", "resource": "public", "expected": "DENY"},
+    {"role": "reader", "action": "delete", "resource": "public", "expected": "DENY"}
+  ],
+  "boundary_requests": [
+    {"role": "reader", "action": "read", "resource": "private", "expected": "DENY"},
+    {"role": "auditor", "action": "delete", "resource": "logs", "expected": "DENY"},
+    {"role": "reader", "action": "", "resource": "public", "expected": "DENY"}
+  ],
+  "failure_policy_fixture": [
+    {"role": "reader", "action": "read", "resource": "public", "effect": "PERMIT"}
+  ]
+}
