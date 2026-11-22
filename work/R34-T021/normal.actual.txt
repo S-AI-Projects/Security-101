@@ -1,0 +1,7 @@
+Scenario: AI-security rubric based on "8.4 End of module quiz.md".
+section=Data Integrity
+asset=Training dataset
+threat=unauthorized data modification
+control=data integrity validation
+residual_risk=Novel manipulation patterns may remain
+result=pass

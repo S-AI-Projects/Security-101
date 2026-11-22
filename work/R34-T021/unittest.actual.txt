@@ -1,0 +1,15 @@
+test_boundary_scenario (test_example.AIScenarioRubricTests) ... ok
+test_complete_scenario_passes (test_example.AIScenarioRubricTests) ... ok
+test_deliberate_wrong_result_fails (test_example.AIScenarioRubricTests) ... ok
+test_empty_residual_risk_fails (test_example.AIScenarioRubricTests) ... ok
+test_failure_scenario (test_example.AIScenarioRubricTests) ... ok
+test_named_lesson_section_is_preserved (test_example.AIScenarioRubricTests) ... ok
+test_normal_scenario_exact_output (test_example.AIScenarioRubricTests) ... ok
+test_public_inputs_and_outputs_are_connected_to_fixture (test_example.AIScenarioRubricTests) ... ok
+test_scenario_without_asset_fails (test_example.AIScenarioRubricTests) ... ok
+test_unrelated_control_flags_review (test_example.AIScenarioRubricTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK

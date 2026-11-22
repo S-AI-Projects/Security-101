@@ -1,0 +1,5 @@
+Scenario: AI-security boundary fixtures based on "8.4 End of module quiz.md".
+complete=pass
+missing_asset=fail
+unrelated_control=review
+boundary_decision=empty required field is fail; unrelated control is review
