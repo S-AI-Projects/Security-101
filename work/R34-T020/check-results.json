@@ -1,0 +1,56 @@
+{
+  "scenarios": [
+    {
+      "scenario": "normal",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3 example.py --scenario normal",
+      "exit_code": 0,
+      "stdout": "Scenario: Illustrative ownership rows based on \"1.6 Shared responsibility model.md\"; these are mock records, not provider policy.\ntask | service_model | responsible_party\nPatch guest operating system | IaaS | customer\nProtect physical host | IaaS | provider\nSecure application code | PaaS | customer\nPatch managed runtime | PaaS | provider\nConfigure user access | SaaS | customer\nProtect hosted application | SaaS | provider\nReview data handling | PaaS | shared\n",
+      "stderr": "",
+      "expected": {
+        "exit_code": 0,
+        "owner_rows": 7,
+        "owners": [
+          "customer",
+          "provider",
+          "shared"
+        ]
+      },
+      "matches_expected": true
+    },
+    {
+      "scenario": "boundary",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3 example.py --scenario boundary",
+      "exit_code": 0,
+      "stdout": "Scenario: Illustrative ownership rows based on \"1.6 Shared responsibility model.md\"; these are mock records, not provider policy.\ntask | service_model | responsible_party\n",
+      "stderr": "",
+      "expected": {
+        "exit_code": 0,
+        "output": "task | service_model | responsible_party"
+      },
+      "matches_expected": true
+    },
+    {
+      "scenario": "failure",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3 example.py --scenario failure",
+      "exit_code": 1,
+      "stdout": "Scenario: Illustrative ownership rows based on \"1.6 Shared responsibility model.md\"; these are mock records, not provider policy.\n",
+      "stderr": "Error: responsibility adapter failed: mock source unavailable\n",
+      "expected": {
+        "exit_code": 1,
+        "stderr": "Error: responsibility adapter failed: mock source unavailable"
+      },
+      "matches_expected": true
+    }
+  ],
+  "unit_test": {
+    "command": "python3 -m unittest discover -s ./applied-labs/r34-t020 -p \"test_*.py\"",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "...........\n----------------------------------------------------------------------\nRan 11 tests in 0.000s\n\nOK\n"
+  },
+  "tool_versions": {
+    "python": "3.13.15",
+    "python_executable": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3",
+    "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+  }
+}
