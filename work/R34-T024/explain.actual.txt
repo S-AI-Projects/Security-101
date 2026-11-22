@@ -1,0 +1,6 @@
+Worked fixture for 3.2 Networking zero trust architecture.md
+client=['resources', 'tools']
+server=['prompts', 'tools']
+negotiated=['tools']
+resources result=rejected_before_dispatch
+dispatch_count=0

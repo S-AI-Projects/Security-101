@@ -1,0 +1,5 @@
+Scenario: capability intersection based on "3.2 Networking zero trust architecture.md".
+client=['resources', 'tools']
+server=['prompts', 'tools']
+negotiated=['tools']
+tools result=dispatched:tools

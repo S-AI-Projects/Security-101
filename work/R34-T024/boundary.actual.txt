@@ -1,0 +1,3 @@
+Scenario: boundary intersection based on "3.2 Networking zero trust architecture.md".
+fixture_overlap=['tools']
+empty_overlap=[]

@@ -1,0 +1,15 @@
+test_boundary_empty_overlap (test_example.CapabilityNegotiationTests) ... ok
+test_boundary_scenario (test_example.CapabilityNegotiationTests) ... ok
+test_deliberate_wrong_result_fails (test_example.CapabilityNegotiationTests) ... ok
+test_explain_scenario_reports_no_dispatch (test_example.CapabilityNegotiationTests) ... ok
+test_failure_scenario_rejects_before_dispatch (test_example.CapabilityNegotiationTests) ... ok
+test_fixture_negotiates_tools_only (test_example.CapabilityNegotiationTests) ... ok
+test_local_adapter_is_callable_and_deterministic (test_example.CapabilityNegotiationTests) ... ok
+test_normal_scenario_exact_output (test_example.CapabilityNegotiationTests) ... ok
+test_resources_are_rejected_before_dispatch (test_example.CapabilityNegotiationTests) ... ok
+test_tools_can_be_dispatched (test_example.CapabilityNegotiationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.000s
+
+OK

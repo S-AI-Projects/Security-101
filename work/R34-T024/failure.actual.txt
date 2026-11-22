@@ -1,0 +1,2 @@
+Scenario: pre-dispatch rejection based on "3.2 Networking zero trust architecture.md".
+Error: Capability 'resources' was not negotiated; allowed=['tools']
