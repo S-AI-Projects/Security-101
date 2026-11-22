@@ -1,0 +1,19 @@
+{
+  "description": "Small deterministic mock responsibility matrix. Every normal fixture row has an explicit owner.",
+  "normal": [
+    {"task": "Patch guest operating system", "service_model": "IaaS", "responsible_party": "customer"},
+    {"task": "Protect physical host", "service_model": "IaaS", "responsible_party": "provider"},
+    {"task": "Secure application code", "service_model": "PaaS", "responsible_party": "customer"},
+    {"task": "Patch managed runtime", "service_model": "PaaS", "responsible_party": "provider"},
+    {"task": "Configure user access", "service_model": "SaaS", "responsible_party": "customer"},
+    {"task": "Protect hosted application", "service_model": "SaaS", "responsible_party": "provider"},
+    {"task": "Review data handling", "service_model": "PaaS", "responsible_party": "shared"}
+  ],
+  "boundary": [],
+  "missing_ownership": [
+    {"task": "Set access policy", "service_model": "SaaS"}
+  ],
+  "invalid_ownership": [
+    {"task": "Set access policy", "service_model": "SaaS", "responsible_party": "unknown"}
+  ]
+}
