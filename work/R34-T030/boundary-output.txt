@@ -1,0 +1,5 @@
+Scenario: Boundary check for unassigned ownership based on "1.6 Shared responsibility model.md"; flags missing ownership rather than assuming provider coverage.
+task | service_model | responsible_party
+Configure network security groups | IaaS | UNASSIGNED
+Define API rate limits | PaaS | UNASSIGNED
+Enforce MFA on user accounts | SaaS | UNASSIGNED

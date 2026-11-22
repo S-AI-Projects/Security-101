@@ -1,0 +1,33 @@
+test_blank_task_name_raises_value_error (test_example.ResponsibilityMatrixTests)
+An empty or blank task name must raise ValueError. ... ok
+test_boundary_scenario_execution (test_example.ResponsibilityMatrixTests)
+Running the boundary scenario returns code 0 and flags unassigned tasks. ... ok
+test_deliberate_wrong_result_fails (test_example.ResponsibilityMatrixTests)
+Confirm that an erroneous expectation raises AssertionError. ... ok
+test_failure_scenario_execution (test_example.ResponsibilityMatrixTests)
+Running the failure scenario returns code 1 and error output. ... ok
+test_invalid_ownership_flagged_invalid (test_example.ResponsibilityMatrixTests)
+An unrecognized responsible party must be flagged as INVALID. ... ok
+test_invalid_service_model_raises_value_error (test_example.ResponsibilityMatrixTests)
+An unsupported service model must raise ValueError. ... ok
+test_missing_ownership_flagged_unassigned (test_example.ResponsibilityMatrixTests)
+Missing or omitted ownership must be flagged UNASSIGNED, not assumed provider. ... ok
+test_non_dict_entry_raises_type_error (test_example.ResponsibilityMatrixTests)
+Non-dictionary items must raise TypeError. ... ok
+test_normal_fixture_all_tasks_have_explicit_ownership (test_example.ResponsibilityMatrixTests)
+Every task in the normal fixture must have explicit customer/provider/shared ownership. ... ok
+test_normal_scenario_execution (test_example.ResponsibilityMatrixTests)
+Running the normal scenario returns code 0 and formatted matrix. ... ok
+test_question_1_predict_output (test_example.ResponsibilityMatrixTests)
+Q1: Predict responsible party for IaaS guest operating system patching. ... ok
+test_question_2_diagnose_failure (test_example.ResponsibilityMatrixTests)
+Q2: Diagnose why unassigned task is not assumed provider-managed. ... ok
+test_question_3_choose_boundary_policy (test_example.ResponsibilityMatrixTests)
+Q3: Boundary policy must flag unassigned ownership rather than defaulting to provider. ... ok
+test_scenario_explanations_cite_lesson (test_example.ResponsibilityMatrixTests)
+Scenario explanations must cite '1.6 Shared responsibility model.md'. ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK

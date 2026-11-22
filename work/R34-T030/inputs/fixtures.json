@@ -1,0 +1,80 @@
+{
+  "description": "Teaching responsibility matrix fixtures and applied questions for R34-T030 (1.6 Shared responsibility model.md)",
+  "normal_fixture": [
+    {
+      "task": "Patch guest operating system",
+      "service_model": "IaaS",
+      "responsible_party": "customer"
+    },
+    {
+      "task": "Protect physical host",
+      "service_model": "IaaS",
+      "responsible_party": "provider"
+    },
+    {
+      "task": "Secure application code",
+      "service_model": "PaaS",
+      "responsible_party": "customer"
+    },
+    {
+      "task": "Patch managed runtime",
+      "service_model": "PaaS",
+      "responsible_party": "provider"
+    },
+    {
+      "task": "Configure user access",
+      "service_model": "SaaS",
+      "responsible_party": "customer"
+    },
+    {
+      "task": "Protect hosted application",
+      "service_model": "SaaS",
+      "responsible_party": "provider"
+    },
+    {
+      "task": "Review data handling",
+      "service_model": "PaaS",
+      "responsible_party": "shared"
+    }
+  ],
+  "boundary_fixture": [
+    {
+      "task": "Configure network security groups",
+      "service_model": "IaaS"
+    },
+    {
+      "task": "Define API rate limits",
+      "service_model": "PaaS",
+      "responsible_party": ""
+    },
+    {
+      "task": "Enforce MFA on user accounts",
+      "service_model": "SaaS",
+      "responsible_party": null
+    }
+  ],
+  "failure_fixture": [
+    {
+      "task": "Maintain server hardware",
+      "service_model": "OnPremise",
+      "responsible_party": "customer"
+    }
+  ],
+  "applied_questions": {
+    "question_1": {
+      "title": "Predict an output",
+      "question": "What is the evaluated responsible party for the task 'Patch guest operating system' under the 'IaaS' service model?",
+      "expected_answer": "customer"
+    },
+    "question_2": {
+      "title": "Diagnose a failure",
+      "question": "Why does evaluating {'task': 'Enforce MFA on user accounts', 'service_model': 'SaaS'} fail to assign provider ownership, and how is it evaluated?",
+      "expected_answer": "UNASSIGNED"
+    },
+    "question_3": {
+      "title": "Choose a boundary policy",
+      "question": "When a workload security task has no assigned responsible party, what boundary policy must be applied: default-to-provider, default-to-customer, or flag as UNASSIGNED?",
+      "expected_answer": "UNASSIGNED"
+    }
+  }
+}

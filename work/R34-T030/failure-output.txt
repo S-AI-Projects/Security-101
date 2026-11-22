@@ -1,0 +1,2 @@
+Scenario: Failure check based on "1.6 Shared responsibility model.md"; rejects malformed records or invalid service models.
+Error: Invalid service model 'OnPremise' for task 'Maintain server hardware'. Allowed models: IaaS, PaaS, SaaS

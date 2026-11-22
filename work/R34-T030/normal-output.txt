@@ -1,0 +1,9 @@
+Scenario: Illustrative teaching responsibility matrix based on "1.6 Shared responsibility model.md"; these are educational mock records, not real provider policy.
+task | service_model | responsible_party
+Patch guest operating system | IaaS | customer
+Protect physical host | IaaS | provider
+Secure application code | PaaS | customer
+Patch managed runtime | PaaS | provider
+Configure user access | SaaS | customer
+Protect hosted application | SaaS | provider
+Review data handling | PaaS | shared
