@@ -1,0 +1,15 @@
+test_boundary_scenario (test_example.ScenarioRubricTests) ... ok
+test_complete_scenario_passes (test_example.ScenarioRubricTests) ... ok
+test_deliberate_wrong_result_fails (test_example.ScenarioRubricTests) ... ok
+test_direct_and_independent_table_agree (test_example.ScenarioRubricTests) ... ok
+test_failure_scenario (test_example.ScenarioRubricTests) ... ok
+test_human_explanation_is_not_automatically_judged (test_example.ScenarioRubricTests) ... ok
+test_independent_table_has_identical_inputs (test_example.ScenarioRubricTests) ... ok
+test_missing_asset_fails (test_example.ScenarioRubricTests) ... ok
+test_normal_scenario_exact_output (test_example.ScenarioRubricTests) ... ok
+test_unrelated_control_flags_review (test_example.ScenarioRubricTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK

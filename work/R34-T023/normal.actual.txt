@@ -1,0 +1,7 @@
+Scenario: structural rubric based on "5.3 End of module quiz.md".
+fixture=Web input
+asset=Customer-profile web form
+threat=malformed or malicious input
+control=server-side allowlist validation
+residual_risk=Unknown payloads may remain and require monitoring
+result=pass

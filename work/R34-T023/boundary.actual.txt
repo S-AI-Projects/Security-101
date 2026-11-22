@@ -1,0 +1,5 @@
+Scenario: direct/table comparison based on "5.3 End of module quiz.md".
+Web input=pass
+Missing asset=fail
+Unrelated control=review
+direct_table_equivalent=true

@@ -1,0 +1,6 @@
+Worked fixture for 5.3 End of module quiz.md
+complete=pass
+missing_asset=fail
+unrelated_control=review
+direct_table_equivalent=true
+human_explanation_review_required=true
