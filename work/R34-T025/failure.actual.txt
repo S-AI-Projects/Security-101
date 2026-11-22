@@ -1,0 +1,2 @@
+Scenario: failure based on "3.3 Network security capabilities.md".
+Error: Malformed IPv4 address: '192.0.2.not-an-ip'

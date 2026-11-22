@@ -1,0 +1,4 @@
+Scenario: allowlist membership based on "3.3 Network security capabilities.md".
+CIDR=192.0.2.0/24
+192.0.2.1 allowed=true
+198.51.100.1 allowed=false

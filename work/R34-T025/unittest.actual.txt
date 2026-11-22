@@ -1,0 +1,18 @@
+test_baseline_and_extracted_fixture_are_equivalent (test_example.IPv4AllowlistTests) ... ok
+test_boundary_scenario (test_example.IPv4AllowlistTests) ... ok
+test_broadcast_address_is_inside_cidr_membership (test_example.IPv4AllowlistTests) ... ok
+test_canonical_address_is_allowed (test_example.IPv4AllowlistTests) ... ok
+test_deliberate_wrong_result_fails (test_example.IPv4AllowlistTests) ... ok
+test_failure_scenario (test_example.IPv4AllowlistTests) ... ok
+test_first_outside_address_is_rejected (test_example.IPv4AllowlistTests) ... ok
+test_malformed_address_is_rejected (test_example.IPv4AllowlistTests) ... ok
+test_malformed_cidr_is_rejected (test_example.IPv4AllowlistTests) ... ok
+test_named_responsibility_class_contract (test_example.IPv4AllowlistTests) ... ok
+test_network_address_is_inside (test_example.IPv4AllowlistTests) ... ok
+test_normal_scenario_exact_output (test_example.IPv4AllowlistTests) ... ok
+test_outside_address_is_not_allowed (test_example.IPv4AllowlistTests) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK

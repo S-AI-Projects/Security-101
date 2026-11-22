@@ -1,0 +1,4 @@
+Scenario: boundary membership based on "3.3 Network security capabilities.md".
+192.0.2.0 allowed=true
+192.0.2.255 allowed=true
+192.0.3.0 allowed=false
