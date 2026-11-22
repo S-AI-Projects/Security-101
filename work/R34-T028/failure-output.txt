@@ -1,0 +1,2 @@
+Scenario: Failure check based on "3.3 Network security capabilities.md"; rejects invalid or malformed network CIDR definitions.
+Error: Invalid network CIDR '192.0.2.0/99': '192.0.2.0/99' does not appear to be an IPv4 or IPv6 network

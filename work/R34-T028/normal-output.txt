@@ -1,0 +1,8 @@
+Scenario: Illustrative network range classification based on "3.3 Network security capabilities.md"; educational mock CIDR checks, no network scanning.
+Allowlisted Network: 192.0.2.0/24
+[ALLOW] IP: 192.0.2.1 -> Belongs to 192.0.2.0/24
+[DENY]  IP: 198.51.100.1 -> Outside 192.0.2.0/24
+[ERROR] IP: invalid-ip-string -> MALFORMED_IP: Malformed input: 'invalid-ip-string' is not a valid IPv4 or IPv6 address ('invalid-ip-string' does not appear to be an IPv4 or IPv6 address).
+[ERROR] IP: '' -> MISSING_DATA: Missing data: IP address string cannot be empty or None.
+[ALLOW] IP: 192.0.2.42 -> Belongs to 192.0.2.0/24
+Recovery: Following malformed/missing entries, subsequent valid address was processed successfully.

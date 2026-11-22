@@ -1,0 +1,17 @@
+{
+  "description": "Fixtures for network range classification and error recovery for R34-T028 (3.3 Network security capabilities.md)",
+  "allowlist_cidr": "192.0.2.0/24",
+  "normal_samples": [
+    {"ip": "192.0.2.1", "expected_status": "ALLOW", "is_member": true},
+    {"ip": "198.51.100.1", "expected_status": "DENY", "is_member": false},
+    {"ip": "invalid-ip-string", "expected_status": "ERROR", "error_type": "MALFORMED_IP"},
+    {"ip": "", "expected_status": "ERROR", "error_type": "MISSING_DATA"},
+    {"ip": "192.0.2.42", "expected_status": "ALLOW", "is_member": true}
+  ],
+  "boundary_samples": [
+    {"ip": "192.0.2.0", "expected_status": "ALLOW", "is_member": true},
+    {"ip": "192.0.2.255", "expected_status": "ALLOW", "is_member": true},
+    {"ip": "192.0.3.1", "expected_status": "DENY", "is_member": false}
+  ],
+  "failure_cidr_fixture": "192.0.2.0/99"
+}

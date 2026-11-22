@@ -1,0 +1,5 @@
+Scenario: Boundary checks for CIDR network classification based on "3.3 Network security capabilities.md"; evaluates network boundaries and adjacent ranges.
+Allowlisted Network: 192.0.2.0/24
+[ALLOW] IP: 192.0.2.0 -> Belongs to 192.0.2.0/24
+[ALLOW] IP: 192.0.2.255 -> Belongs to 192.0.2.0/24
+[DENY]  IP: 192.0.3.1 -> Outside 192.0.2.0/24

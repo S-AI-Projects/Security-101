@@ -1,0 +1,29 @@
+test_boundary_scenario_execution (test_example.NetworkClassificationTests)
+Boundary scenario runs with code 0. ... ok
+test_deliberate_wrong_result_fails (test_example.NetworkClassificationTests)
+A deliberate wrong result assertion fails with AssertionError. ... ok
+test_error_explanation_and_recovery (test_example.NetworkClassificationTests)
+Exercise invalid/missing data, verify error explanation, and prove recovery on next valid input. ... ok
+test_failure_scenario_execution (test_example.NetworkClassificationTests)
+Failure scenario runs with code 1 and outputs error for invalid network CIDR. ... ok
+test_in_network_member_belongs (test_example.NetworkClassificationTests)
+192.0.2.1 belongs to 192.0.2.0/24: evaluates to ALLOW and is_member=True. ... ok
+test_invalid_cidr_raises_value_error (test_example.NetworkClassificationTests)
+Invalid network CIDR definition raises ValueError. ... ok
+test_malformed_ip_rejected (test_example.NetworkClassificationTests)
+Malformed IP strings are rejected with structured MALFORMED_IP error. ... ok
+test_missing_data_rejected (test_example.NetworkClassificationTests)
+Empty strings, whitespace, or None are rejected with MISSING_DATA error. ... ok
+test_network_boundary_addresses (test_example.NetworkClassificationTests)
+Network address and broadcast address evaluate to ALLOW; adjacent subnet to DENY. ... ok
+test_normal_scenario_execution (test_example.NetworkClassificationTests)
+Normal scenario runs with code 0 and contains allow, deny, error, and recovery. ... ok
+test_out_of_network_non_member (test_example.NetworkClassificationTests)
+198.51.100.1 does not belong to 192.0.2.0/24: evaluates to DENY and is_member=False. ... ok
+test_scenario_citations_cite_lesson (test_example.NetworkClassificationTests)
+Scenario explanations must cite 3.3 Network security capabilities.md. ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK
